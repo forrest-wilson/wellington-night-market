@@ -1,3 +1,11 @@
+/* SASS VARIABLES */
+/* COLORS */
+/* UNCOMMENT THESE VARIABLES ONCE THEY HAVE VALUES */
+/* FONTS */
+/* FONT SIZES */
+/* LAYOUT WIDTHS */
+/* OPACITY */
+/* TRANSITION SPEEDS */
 /* BASE STYLES */
 
 body {
@@ -14,7 +22,6 @@ body {
 
 .someOtherClass {
   height: 10px; }
-
 
 /* LAYOUT */
 /* MODULES */
