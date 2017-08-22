@@ -11,6 +11,10 @@
 body {
   background-color: grey; }
 
+.navListItems {
+	list-style-type: none;
+}
+
 .noMarginOrPadding {
   margin: 0;
   padding: 0; }
