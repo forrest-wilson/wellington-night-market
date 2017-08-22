@@ -1,4 +1,9 @@
 /* BASE STYLES */
+
+body {
+	max-width: 1024px;
+}
+
 .noMarginOrPadding {
   margin: 0;
   padding: 0; }
@@ -6,9 +11,7 @@
 .someOtherClass {
   height: 10px; }
 
-body {
-max-width: 1024px;
-}
+
 /* LAYOUT */
 /* MODULES */
 /* STATE */
