@@ -6,6 +6,9 @@
 .someOtherClass {
   height: 10px; }
 
+body {
+max-width: 1024px;
+}
 /* LAYOUT */
 /* MODULES */
 /* STATE */
