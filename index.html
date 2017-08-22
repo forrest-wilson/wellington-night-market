@@ -4,25 +4,126 @@
 	<title>Wellington Night Market</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS STYLESHEETS -->
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
-	<nav class="nav">
-		<aside class="navLogo clearfix"><img src="img/logo1.png"></aside>
+	<header class="navContainer">
+		<nav class="nav">
+			<aside class="navLogo clearfix"><img src="img/logo3.png"></aside>
 
-		<ul class="navListItems noMarginOrPadding clearfix">
-			<li class="navListItem"><a href="#">WHAT'S ON</a></li>
-			<li class="navListItem"><a href="#">ABOUT US</a></li>
-			<li class="navListItem"><a href="#">REVIEWS</a></li>
-			<li class="navListItem"><a href="#">CONTACT</a></li>
-		</ul>
-	</nav>
+			<ul class="navListItems noMarginOrPadding clearfix">
+				<li class="navListItem"><a href="#" class="is-activeNav">WHAT'S ON</a></li>
+				<li class="navListItem"><a href="#">ABOUT US</a></li>
+				<li class="navListItem"><a href="#">REVIEWS</a></li>
+				<li class="navListItem"><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<section class="section slideshowSection">
+	<main>
+		<section class="slideshowSection">
+			<img class="slideshowToggle prevToggle" src="img/prev.svg">
+			<img class="slideshowToggle nextToggle" src="img/next.svg">
 
-	</section>
+			<article class="slideshowBlurb">
+				<h1>The Wellington Night Market</h1>
+				<p>Every Friday at 116 Cuba Street,<br>Wellington</p>
+				<p>Every Saturday on the corner of Cuba<br>and Manners Street, Wellington</p>
+			</article>
+		</section>
+
+		<section class="section whatsOnSection">
+			<h1 class="noMarginOrPadding">WHAT'S ON</h1>
+			<div class="wrapper">
+				<article class="event event1"></article>
+				<article class="event event2"></article>
+				<article class="event event3"></article>
+			</div>
+		</section>
+
+		<section class="section aboutSection">
+			<article class="aboutBlurb">
+				<h1 class="noMarginOrPadding">ABOUT THE MARKET</h1>
+				<p class="noMarginOrPadding">The Wellington Night Market is a weekly celebration of cuisine, culture, and creativity on Cuba Street. A dining destination and a MUST DO experience for city locals and visitors to the world's 'coolest little capital'. It's all about food, flavours, fun, friends, and family.</p>
+			</article>
+		</section>
+
+		<section class="section reviewSection">
+			<h1 class="noMarginOrPadding">WHAT THE PEOPLE HAVE TO SAY</h1>
+			<div class="wrapper">
+				<article class="review review1">
+					<div class="starRatingWrapper">
+						<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+					</div>
+					<p><i>"Love the night market! The choice of food is amazing; I had 2x mains but would have had more if my gut could have taken it heheh"<br><br>- Chris Wilkins, Facebook</i></p>
+				</article>
+				<article class="review review2">
+					<div class="starRatingWrapper">
+						<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+					</div>
+					<p><i>"Wonderful, relaxed vibe. Great food choice, the smells were amazing as were the music and the bubbles!!!<br><br>- Cheryl McBain, Facebook</i></p>
+				</article>
+				<article class="review review3">
+					<div class="starRatingWrapper">
+						<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+					</div>
+					<p><i>"Last night was my 1st time at the Wellington Night Market. I had the Churros and they were awesome! I will be back again!"<br><br>- Raelean Matthews, Facebook</i></p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section contactSection">
+			<div class="wrapper contactWrapper">
+				<article class="form form1">
+					<form>
+						<h1 class="noMarginOrPadding">HAVE ANY QUERIES?<br>GET IN TOUCH</h1>
+
+						<fieldset class="formFieldset">
+							<label for="name">Name:</label>
+							<input type="text" name="name">
+						</fieldset>
+
+						<fieldset class="formFieldset">
+							<label for="email">Email:</label>
+							<input type="text" name="email">
+						</fieldset>
+
+						<fieldset class="formFieldset">
+							<label for="message">Message:</label>
+							<textarea></textarea>
+						</fieldset>
+					</form>
+				</article>
+				<article class="form form2">
+					<form>
+						<h1 class="noMarginOrPadding">WANT TO BE A PART<br>OF THE MARKET?</h1>
+
+						<fieldset class="formFieldset">
+							<label for="name">Name:</label>
+							<input type="text" name="name">
+						</fieldset>
+
+						<fieldset class="formFieldset">
+							<label for="email">Email:</label>
+							<input type="text" name="email">
+						</fieldset>
+
+						<fieldset class="formFieldset">
+							<label for="message">Message:</label>
+							<textarea></textarea>
+						</fieldset>
+					</form>
+				</article>
+			</div>
+		</section>
+	</main>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/app.js"></script>
