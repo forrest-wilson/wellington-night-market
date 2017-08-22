@@ -4,6 +4,10 @@ body {
 	max-width: 1024px;
 }
 
+.navListitems {
+	list-style-type: none;
+}
+
 .noMarginOrPadding {
   margin: 0;
   padding: 0; }
