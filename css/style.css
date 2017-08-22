@@ -7,6 +7,11 @@
 /* OPACITY */
 /* TRANSITION SPEEDS */
 /* BASE STYLES */
+
+body {
+	max-width: 1024px;
+}
+
 .noMarginOrPadding {
   margin: 0;
   padding: 0; }
@@ -14,6 +19,10 @@
 .someOtherClass {
   height: 10px; }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 12aaf440210a4f12063de2e34632a46703d5bb70
 /* LAYOUT */
 /* MODULES */
 /* STATE */
