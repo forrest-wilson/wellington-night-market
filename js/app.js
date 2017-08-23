@@ -47,6 +47,13 @@ $(document).ready(function() {
         }, $scrollTime);
     });
 
+    // Event hover function
+    $('.eventOverlay').hover(function() {
+        $(this).addClass('eventOverlayShowing');
+    }, function() {
+        $(this).removeClass('eventOverlayShowing');
+    });
+
     // Call methods when scrolling
     $(document).scroll(function() {
         // Variable declaration to help with browser caching (decrease load times)
