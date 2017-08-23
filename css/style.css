@@ -281,7 +281,8 @@ a {
   grid-column: 5 / 7; }
 
 .locationSection {
-  grid-row: 1; }
+  grid-row: 1;
+  background-color: #202a2e; }
 
 .locationMap {
   grid-column: 1 / 4; }
@@ -289,13 +290,23 @@ a {
 .locationBlurb {
   grid-column: 4 / 7; }
 
+.blurbWrapper {
+  position: relative;
+  top: 120px; }
+  .blurbWrapper h1 {
+    padding-top: 0; }
+  .blurbWrapper p {
+    padding-bottom: 10px;
+    color: white; }
+
 .form {
   grid-row: 1;
   text-align: center;
   padding: 50px 0; }
   .form form {
     background-color: white;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 0 10px; }
 
 .form1 {
   padding-right: 25px;
