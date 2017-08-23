@@ -202,15 +202,24 @@ a {
 #mapContainer {
     position: relative;
     padding-top: 50%;
-    
-
+<<<<<<< HEAD
+    max-width: $contentWidth;
+=======
+>>>>>>> 0f3e497374427c04cf45129b2e51cbe5a084cb19
     margin: 0 auto;
     
 }
 #map {
     position: absolute;
+<<<<<<< HEAD
+    width: 100%;
+    height: 100%;
+=======
+    margin-left: 20px;
+    margin-top: 20px;
     width: 50%;
     height: 70%;
+>>>>>>> 0f3e497374427c04cf45129b2e51cbe5a084cb19
     top: 0;
 }
 
