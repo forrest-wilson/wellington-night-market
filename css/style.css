@@ -236,7 +236,11 @@ a {
 
 .form {
   grid-row: 1;
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0; }
+  .form form {
+    background-color: white;
+    border-radius: 5px; }
 
 .form1 {
   padding-right: 25px;
@@ -254,6 +258,8 @@ a {
   .formFieldset label {
     display: block;
     margin-bottom: 8px; }
+  .formFieldset textarea {
+    max-width: 100%; }
   .formFieldset input[type="email"],
   .formFieldset input[type="text"],
   .formFieldset textarea,
@@ -283,7 +289,8 @@ a {
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 0.5px;
-  font-size: 20px; }
+  font-size: 20px;
+  outline: 0; }
 
 .carousel-inner {
   height: 100%; }
@@ -332,6 +339,12 @@ a {
 
 .toTopIcon {
   opacity: 0.0; }
+  .toTopIcon p {
+    line-height: 30px;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 16px; }
 
 .toTopShowing {
   opacity: 1.0; }

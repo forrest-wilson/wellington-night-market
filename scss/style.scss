@@ -284,6 +284,12 @@ a {
 .form {
     grid-row: 1;
     text-align: center;
+    padding: 50px 0;
+
+    form {
+        background-color: $secondaryColor;
+        border-radius: $borderRadius;
+    }
 }
 
 .form1 {
@@ -305,6 +311,11 @@ a {
     label {
         display: block;
         margin-bottom: 8px;
+    }
+
+    textarea {
+        // Makes sure the message textarea cant be horizontally resized
+        max-width: 100%;
     }
 
     input[type="email"],
@@ -330,8 +341,8 @@ a {
  .submitButton {
     background-color: $primaryColor;
     border: none;
-    border-radius:$borderRadius;
-    color: white;
+    border-radius: $borderRadius;
+    color: $secondaryColor;
     padding: 15px 80px;
     margin-bottom: 40px;
     margin-top: 10px;
@@ -340,7 +351,8 @@ a {
     display: inline-block;
     font-family: $fontSecondary;
     letter-spacing: $letterSpacing;
-    font-size: 20px;
+    font-size: $navFontSize;
+    outline: 0;
 }
 
 .carousel-inner {
@@ -402,6 +414,14 @@ a {
 
 .toTopIcon {
     opacity: 0.0;
+
+    p {
+        line-height: 30px;
+        padding: 10px 0;
+        text-align: center;
+        color: $secondaryColor;
+        font-size: $paragraphFontSize;
+    }
 }
 
 .toTopShowing {
