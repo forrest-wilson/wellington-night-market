@@ -48,6 +48,7 @@ $(document).ready(function() {
             $navContainer.addClass('notAtTop');
         }
     });
+    
 	//Google Maps JS
 	//Set Map
 	function initialize() {
