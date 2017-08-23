@@ -29,7 +29,7 @@ a {
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $opaqueBackground;
     transition: $transitionSpeed;
     display: block;
     height: 75px;
@@ -149,7 +149,7 @@ a {
     margin: 0 auto;
     max-width: $contentWidth;
     border-radius: $borderRadius;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $opaqueBackground;
 
     h1, p {
         text-align: center;
