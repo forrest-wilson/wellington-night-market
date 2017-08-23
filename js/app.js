@@ -1,29 +1,32 @@
 $(document).ready(function() {
     // Variable declarations
     var $scrollTime = 600;
-    $(window).scroll();
+    var $navContainer = $('#navContainer');
+    var $htmlBody = $('html body');
+    var $navLogo = $('.navLogo');
+    var $navListItemAnchor = $('.navListItem a');
 
     // Scroll to sections when clicked
     $('#whatsOnNavItem').click(function() {
-        $('html body').animate({
+        $htmlBody.animate({
             scrollTop: $('#whatsOnSection').offset().top - 75 // the 75 is the navigation height offset
         }, $scrollTime);
     });
 
     $('#aboutUsNavItem').click(function() {
-        $('html body').animate({
+        $htmlBody.animate({
             scrollTop: $('#aboutUsSection').offset().top - 75
         }, $scrollTime);
     });
 
     $('#reviewsNavItem').click(function() {
-        $('html body').animate({
+        $htmlBody.animate({
             scrollTop: $('#reviewsSection').offset().top - 75
         }, $scrollTime);
     });
 
     $('#contactNavItem').click(function() {
-        $('html body').animate({
+        $htmlBody.animate({
             scrollTop: $('#contactSection').offset().top - 75
         }, $scrollTime);
     });
@@ -37,25 +40,33 @@ $(document).ready(function() {
         $(this).addClass('is-activeNav');
     });
 
+    // Click functionality for the toTopIcon
+    $('#toTopIcon').click(function() {
+        $htmlBody.animate({
+            scrollTop: $htmlBody.offset().top
+        }, $scrollTime);
+    });
+
     // Call methods when scrolling
     $(document).scroll(function() {
         // Variable declaration to help with browser caching (decrease load times)
         var $scrollPos = $(document).scrollTop();
-        var $navContainer = $('#navContainer')
 
         // Adds and removes the notAtTop class depending on scroll position
         // Change the number value in the if() statement to change the point
         // at which the function runs
         if ($scrollPos < 575) {
             $navContainer.removeClass('notAtTop');
-            $('.navLogo').removeClass('navImageChange');
-            $('.navListItem a').removeClass('blackHover');
-            $('.navListItem a').addClass('whiteHover');
+            $navLogo.removeClass('navImageChange');
+            $navListItemAnchor.removeClass('blackHover');
+            $navListItemAnchor.addClass('whiteHover');
+            $('#toTopIcon').removeClass('toTopShowing');
         } else {
             $navContainer.addClass('notAtTop');
-            $('.navLogo').addClass('navImageChange');
-            $('.navListItem a').removeClass('whiteHover');
-            $('.navListItem a').addClass('blackHover');
+            $navLogo.addClass('navImageChange');
+            $navListItemAnchor.removeClass('whiteHover');
+            $navListItemAnchor.addClass('blackHover');
+            $('#toTopIcon').addClass('toTopShowing');
         }
     });
 
