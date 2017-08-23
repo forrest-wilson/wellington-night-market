@@ -205,10 +205,18 @@ a {
 .carousel-inner {
   height: 100%; }
 
+/* REMOVES THE GRADIENT FROM BEHIND THE SLIDESHOW TOGGLES */
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none; }
+
 /* STATE */
 .navListItem a:hover,
 .is-activeNav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.navListItem a:focus,
+.navListItem a:hover {
   text-decoration: none; }
 
 .notAtTop {
