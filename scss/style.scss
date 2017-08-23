@@ -6,6 +6,10 @@ h1 {
     font-size: $headerFontSize;
     font-family: $fontPrimary;
 }
+h2 {
+    font-size: $headerFontSize;
+    font-family: $fontPrimary;
+}
 
 p {
     font-size: $navFontSize;
@@ -29,7 +33,7 @@ a {
     left: 0;
     right: 0;
     top: 0;
-    background-color: $opaqueBackground;
+    background-color: $navOpaqueBackground;
     transition: $transitionSpeed;
     display: block;
     height: 75px;
@@ -148,11 +152,33 @@ a {
     max-width: $contentWidth;
     border-radius: $borderRadius;
     background-color: $opaqueBackground;
+    max-width: 600px;
 
-    h1, p {
-        text-align: center;
-        color: $secondaryColor;
-    }
+        h1 {
+            text-align: center;
+            color: $secondaryColor;
+            font-size: 80px;
+            margin:0;
+            letter-spacing: 1px;
+        }  
+
+        h2 {
+            text-align: center;
+            color: $secondaryColor; 
+            font-size: 25px;
+            letter-spacing: 2px;
+            margin-top:40px;
+            margin-bottom: 0px;
+            padding:0;
+        }
+        
+        p {
+            text-align: center;
+            color: $primaryColor;
+            font-size: 20px;
+            letter-spacing: $letterSpacing;
+            margin-bottom: 40px;
+        }
 }
 
 .wrapper {
@@ -298,6 +324,22 @@ a {
         border: 2px solid $primaryColor;
         outline: 0;
     }
+}
+
+ .submitButton {
+    background-color: $primaryColor; 
+    border: none;
+    border-radius:$borderRadius;
+    color: white;
+    padding: 15px 80px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: $fontSecondary;
+    letter-spacing: $letterSpacing;
+    font-size: 20px;
 }
 
 .carousel-inner {

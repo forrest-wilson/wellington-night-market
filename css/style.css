@@ -3,12 +3,17 @@
 /* UNCOMMENT THESE VARIABLES ONCE THEY HAVE VALUES */
 /* FONTS */
 /* FONT SIZES */
+/* LETTER SPACING */
 /* BORDER RADIUS */
 /* LAYOUT WIDTHS */
 /* OPACITY */
 /* TRANSITION SPEEDS */
 /* BASE STYLES */
 h1 {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif; }
+
+h2 {
   font-size: 40px;
   font-family: "Oswald", sans-serif; }
 
@@ -30,7 +35,7 @@ a {
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgba(25, 25, 25, 0.75);
+  background-color: rgba(10, 10, 10, 0.75);
   transition: 300ms;
   display: block;
   height: 75px;
@@ -126,10 +131,28 @@ a {
   margin: 0 auto;
   max-width: 1024px;
   border-radius: 5px;
-  background-color: rgba(25, 25, 25, 0.75); }
-  .slideshowBlurb h1, .slideshowBlurb p {
+  background-color: rgba(10, 10, 10, 0.85);
+  max-width: 600px; }
+  .slideshowBlurb h1 {
     text-align: center;
-    color: white; }
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 1px; }
+  .slideshowBlurb h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0; }
+  .slideshowBlurb p {
+    text-align: center;
+    color: #CA433D;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px; }
 
 .wrapper {
   display: grid;
@@ -245,6 +268,21 @@ a {
     border-radius: 5px;
     border: 2px solid #CA433D;
     outline: 0; }
+
+.submitButton {
+  background-color: #CA433D;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 80px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 20px; }
 
 .carousel-inner {
   height: 100%; }

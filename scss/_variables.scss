@@ -17,6 +17,9 @@ $headerFontSize: 40px;
 $navFontSize: 20px;
 $paragraphFontSize: 16px;
 
+/* LETTER SPACING */
+$letterSpacing:0.5px;
+
 /* BORDER RADIUS */
 
 $borderRadius: 5px;
@@ -28,7 +31,9 @@ $mapContentWidth: 1200px;
 /* OPACITY */
 $opaqueHover: 75%;
 $opaque: 30%;
-$opaqueBackground: rgba(25, 25, 25, 0.75);
+$navOpaqueBackground: rgba(10, 10, 10, 0.75);
+$opaqueBackground: rgba(10, 10, 10, 0.85);
+
 
 /* TRANSITION SPEEDS */
 $transitionSpeed: 300ms;
