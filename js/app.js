@@ -27,6 +27,12 @@ $(document).ready(function() {
         }, $scrollTime);
     });
 
+    // When clicking on a nav item, the background sticks with it
+    $('.navListItem a').click(function() {
+        $('.navListItem a').removeClass('is-activeNav');
+        $(this).addClass('is-activeNav');
+    });
+
     // Call methods when scrolling
     $(document).scroll(function() {
         // Variable declaration to help with browser caching (decrease load times)
@@ -36,10 +42,12 @@ $(document).ready(function() {
         // Adds and removes the notAtTop class depending on scroll position
         // change the number value in the if() statement to change the point
         // at which the function runs
-        if ($scroll >= 575) {
-            $navContainer.addClass('notAtTop');
-        } else {
+        if ($scroll < 575) {
             $navContainer.removeClass('notAtTop');
+        } else {
+            $navContainer.addClass('notAtTop');
         }
+
+        console.log($('#whatsOnSection').offset().top)
     });
 });
