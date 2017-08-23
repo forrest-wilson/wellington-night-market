@@ -51,9 +51,9 @@ $(document).ready(function() {
 	//Google Maps JS
 	//Set Map
 	function initialize() {
-			var myLatlng = new google.maps.LatLng(53.3333,-3.08333);
+			var myLatlng = new google.maps.LatLng(-41.2926356,174.7760156,19.82);
 			var mapOptions = {
-				zoom: 11,
+				zoom: 19,
 				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
