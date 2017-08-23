@@ -218,6 +218,8 @@ a {
 
 .carousel-inner {
   height: 100%; }
+  .carousel-inner .item img {
+    min-width: 1200px; }
 
 /* REMOVES THE GRADIENT FROM BEHIND THE SLIDESHOW TOGGLES */
 .carousel-control.right,
