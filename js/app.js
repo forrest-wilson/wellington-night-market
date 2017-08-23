@@ -40,15 +40,29 @@ $(document).ready(function() {
         var $navContainer = $('#navContainer')
 
         // Adds and removes the notAtTop class depending on scroll position
-        // change the number value in the if() statement to change the point
+        // Change the number value in the if() statement to change the point
         // at which the function runs
         if ($scrollPos < 575) {
             $navContainer.removeClass('notAtTop');
+            $('.navLogo').removeClass('navImageChange');
         } else {
             $navContainer.addClass('notAtTop');
+            $('.navLogo').addClass('navImageChange');
         }
+
+        $('.navListItem a').each(function() {
+            var $currLink = $(this);
+            var $refElement = $($currLink.attr("href"));
+
+            if (($refElement.position().top) - 75 <= $scrollPos && ($refElement.position().top) + $refElement.height() > $scrollPos) {
+                $('navListItem a').removeClass('active');
+                $currLink.addClass('is-activeNav');
+            } else {
+                $currLink.removeClass('active');
+            }
+        });
     });
-    
+
 	//Google Maps JS
 	//Set Map
 	function initialize() {

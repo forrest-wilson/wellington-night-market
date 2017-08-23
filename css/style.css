@@ -1,4 +1,3 @@
-
 /* SASS VARIABLES */
 /* COLORS */
 /* UNCOMMENT THESE VARIABLES ONCE THEY HAVE VALUES */
@@ -236,6 +235,15 @@ a {
 
 .notAtTop {
   background-color: white; }
+
+.navLogo {
+  background-image: url("../img/logo1_cropped.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; }
+
+.navImageChange {
+  background-image: url("../img/logo2_cropped.png"); }
 
 /* THEME */
 
