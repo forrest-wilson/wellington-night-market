@@ -202,6 +202,9 @@ a {
   .formFieldset textarea {
     width: 100%; }
 
+.carousel-inner {
+  height: 100%; }
+
 /* STATE */
 .navListItem a:hover,
 .is-activeNav {
@@ -209,15 +212,6 @@ a {
 
 .notAtTop {
   background-color: white; }
-
-.slideshowSection1 {
-  background-image: url("../img/resized/CamNightPhoto_LIGHT.png"); }
-
-.slideshowSection2 {
-  background-image: url("../img/resized/NightMarketImagesResized1.png"); }
-
-.slideshowSection3 {
-  background-image: url(); }
 
 /* THEME */
 

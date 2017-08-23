@@ -247,6 +247,10 @@ a {
     }
 }
 
+.carousel-inner {
+    height: 100%;
+}
+
 /* STATE */
 
 .navListItem a:hover,
@@ -258,16 +262,16 @@ a {
     background-color: rgba(255, 255, 255, 1.0);
 }
 
-.slideshowSection1{
-    background-image: url('../img/resized/CamNightPhoto_LIGHT.png');
-}
-
-.slideshowSection2{
-    background-image: url('../img/resized/NightMarketImagesResized1.png');
-}
-
-.slideshowSection3{
-    background-image: url();
-}
+// .slideshowSection1{
+//     background-image: url('../img/resized/CamNightPhoto_LIGHT.png');
+// }
+//
+// .slideshowSection2{
+//     background-image: url('../img/resized/NightMarketImagesResized1.png');
+// }
+//
+// .slideshowSection3{
+//     background-image: url();
+// }
 
 /* THEME */
