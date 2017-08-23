@@ -73,11 +73,10 @@ a {
     top: 650px;
     background-color: $secondaryColor;
     z-index: 150;
-    padding-bottom: 20px;
 
     h1 {
         text-align: center;
-        padding: 20px 0;
+        padding: 40px 0;
         color: $primaryColor;
     }
 }
@@ -161,6 +160,11 @@ a {
     grid-template-columns: repeat(6, 1fr);
 }
 
+.aboutSection,
+.contactSection {
+    background-color: $darkColor;
+}
+
 .contactWrapper {
     margin: 0 auto;
     max-width: $contentWidth;
@@ -196,7 +200,7 @@ a {
         text-align: center;
         font-size: $navFontSize;
         color: $primaryColor;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 }
 
@@ -223,6 +227,7 @@ a {
     grid-row: 1;
     text-align: center;
     margin: 0 20px;
+    padding-bottom: 30px;
 }
 
 .review1 {
@@ -268,6 +273,7 @@ a {
     border: none;
     margin: 0;
     text-align: left;
+    padding: 15px 10px;
 
     label {
         display: block;
@@ -276,8 +282,21 @@ a {
 
     input[type="email"],
     input[type="text"],
+    textarea,
+    label {
+        font-family: $fontSecondary;
+        font-size: $paragraphFontSize;
+        color: $primaryColor;
+    }
+
+    input[type="email"],
+    input[type="text"],
     textarea {
         width: 100%;
+        padding: 15px;
+        border-radius: $borderRadius;
+        border: 2px solid $primaryColor;
+        outline: 0;
     }
 }
 
