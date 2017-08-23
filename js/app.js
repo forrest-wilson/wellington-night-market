@@ -47,7 +47,5 @@ $(document).ready(function() {
         } else {
             $navContainer.addClass('notAtTop');
         }
-
-
     });
 });
