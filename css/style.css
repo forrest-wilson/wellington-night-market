@@ -130,7 +130,8 @@ a {
   border-radius: 5px;
   background-color: rgba(25, 25, 25, 0.75); }
   .slideshowBlurb h1, .slideshowBlurb p {
-    text-align: center; }
+    text-align: center;
+    color: white; }
 
 .wrapper {
   display: grid;
@@ -164,19 +165,21 @@ a {
   .aboutBlurb p {
     text-align: center;
     font-size: 20px;
-    color: #CA433D; }
+    color: #CA433D;
+    padding-bottom: 20px; }
 
 #mapContainer {
   position: relative;
-  padding-top: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 500px; }
 
 #map {
   position: absolute;
-  margin-left: 20px;
-  margin-top: 20px;
   width: 50%;
-  height: 70%;
+  height: 100%;
+  top: 0; }
+
+.locationSection {
   top: 0; }
 
 .review {

@@ -153,6 +153,7 @@ a {
 
     h1, p {
         text-align: center;
+        color: white;
     }
 }
 
@@ -196,21 +197,24 @@ a {
         text-align: center;
         font-size: $navFontSize;
         color: $primaryColor;
+        padding-bottom: 20px;
     }
 }
 
 #mapContainer {
     position: relative;
-    padding-top: 50%;
     margin: 0 auto;
-
+    height: 500px;
 }
+
 #map {
     position: absolute;
-    margin-left: 20px;
-    margin-top: 20px;
     width: 50%;
-    height: 70%;
+    height: 100%;
+    top: 0;
+}
+
+.locationSection {
     top: 0;
 }
 
