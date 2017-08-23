@@ -9,11 +9,7 @@
 /* OPACITY */
 /* TRANSITION SPEEDS */
 /* BASE STYLES */
-h1 {
-  font-size: 40px;
-  font-family: "Oswald", sans-serif; }
-
-h2 {
+h1, h2 {
   font-size: 40px;
   font-family: "Oswald", sans-serif; }
 
@@ -26,28 +22,26 @@ p {
   padding: 0; }
 
 a {
-  text-decoration: none;
-  color: black; }
+  text-decoration: none; }
 
 /* LAYOUT */
+.nav,
 .navContainer {
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  transition: 300ms; }
+
+.navContainer {
+  position: fixed;
   background-color: rgba(10, 10, 10, 0.75);
-  transition: 300ms;
   display: block;
   height: 75px;
   z-index: 200; }
 
 .nav {
   max-width: 1024px;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 75px;
-  transition: 300ms;
+  height: 100%;
   margin: 0 auto;
   font-size: 20px;
   font-family: "Oswald", sans-serif; }

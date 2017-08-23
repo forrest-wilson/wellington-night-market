@@ -2,11 +2,7 @@
 
 /* BASE STYLES */
 
-h1 {
-    font-size: $headerFontSize;
-    font-family: $fontPrimary;
-}
-h2 {
+h1, h2 {
     font-size: $headerFontSize;
     font-family: $fontPrimary;
 }
@@ -23,18 +19,21 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 /* LAYOUT */
 
+.nav,
 .navContainer {
-    position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    background-color: $navOpaqueBackground;
     transition: $transitionSpeed;
+}
+
+.navContainer {
+    position: fixed;
+    background-color: $navOpaqueBackground;
     display: block;
     height: 75px;
     z-index: 200;
@@ -42,11 +41,7 @@ a {
 
 .nav {
     max-width: $contentWidth;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 75px;
-    transition: $transitionSpeed;
+    height: 100%;
     margin: 0 auto;
     font-size: $navFontSize;
     font-family: $fontPrimary;
@@ -67,6 +62,7 @@ a {
     position: fixed;
     z-index: 50;
     top: 0;
+
     img {
         display: block;
     }
