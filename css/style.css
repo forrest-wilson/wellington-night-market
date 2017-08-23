@@ -169,7 +169,7 @@ a {
 #mapContainer {
   position: relative;
   padding-top: 50%;
-  width: 100%;
+  max-width: 1024px;
   margin: 0 auto; }
 
 #map {

@@ -202,8 +202,9 @@ a {
 #mapContainer {
     position: relative;
     padding-top: 50%;
-    width: 100%;
+    max-width: $contentWidth;
     margin: 0 auto;
+    
 }
 #map {
     position: absolute;
