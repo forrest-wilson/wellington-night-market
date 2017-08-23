@@ -226,9 +226,11 @@ a {
   background-image: none; }
 
 /* STATE */
-.navListItem a:hover,
-.is-activeNav {
-  background-color: rgba(0, 0, 0, 0.15); }
+.whiteHover:hover {
+  color: white; }
+
+.blackHover:hover {
+  color: black; }
 
 .navListItem a:focus,
 .navListItem a:hover {

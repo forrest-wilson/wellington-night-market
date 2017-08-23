@@ -278,9 +278,17 @@ a {
 
 /* STATE */
 
-.navListItem a:hover,
-.is-activeNav {
-    background-color: rgba(0,0,0,0.15);
+// .navListItem a:hover,
+// .is-activeNav {
+//     color: white;
+// }
+
+.whiteHover:hover {
+    color: white;
+}
+
+.blackHover:hover {
+    color: black;
 }
 
 .navListItem a:focus,
