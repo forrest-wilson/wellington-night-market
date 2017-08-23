@@ -388,15 +388,19 @@ a {
 /* ======================= */
 /* ======== STATE ======== */
 /* ======================= */
+.is-activeNav {
+  text-decoration: underline; }
+
+.whiteHover:hover,
+.blackHover:hover {
+  transition: 300ms;
+  text-decoration: underline; }
+
 .whiteHover:hover {
   color: white; }
 
 .blackHover:hover {
   color: black; }
-
-.navListItem a:focus,
-.navListItem a:hover {
-  text-decoration: none; }
 
 .notAtTop {
   background-color: white; }

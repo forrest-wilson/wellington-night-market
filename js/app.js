@@ -75,7 +75,17 @@ $(document).ready(function() {
             $navListItemAnchor.addClass('blackHover');
             $('#toTopIcon').addClass('toTopShowing');
         }
-    });
+
+        // $('section').each(function(i) {
+        //     if ($(this).position().top <= $scrollPos - 75) {
+        //         $('.navListItem a.is-activeNav').removeClass('is-activeNav');
+        //         $('.navListItem a').addClass('is-activeNav');
+        //     } else {
+        //         $('.navListItem a.is-activeNav').removeClass('is-activeNav');
+        //         $('.navListItem:first a').eq(i).addClass('is-activeNav');
+        //     }
+        // });
+    }).scroll(); // Self executing scroll on page load to initialize elements that rely on the scroll function being triggered
 
 	//Google Maps JS
 	//Set Map
