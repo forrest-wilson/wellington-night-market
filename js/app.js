@@ -55,10 +55,10 @@ $(document).ready(function() {
             var $refElement = $($currLink.attr("href"));
 
             if (($refElement.position().top) - 75 <= $scrollPos && ($refElement.position().top) + $refElement.height() > $scrollPos) {
-                $('navListItem a').removeClass('active');
+                $('navListItem a').removeClass('is-activeNav');
                 $currLink.addClass('is-activeNav');
             } else {
-                $currLink.removeClass('active');
+                $currLink.removeClass('is-activeNav');
             }
         });
     });
@@ -103,4 +103,3 @@ $(document).ready(function() {
 	google.maps.event.addDomListener(window, 'load', initialize);
 
 });
-
