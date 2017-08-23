@@ -41,6 +41,7 @@ a {
     display: block;
     height: 75px;
     z-index: 200;
+    border-bottom: 2px solid $darkColorOpaque;
 }
 
 .nav {
@@ -97,6 +98,11 @@ a {
 .verticalWrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+}
+
+.footer {
+    height: 450px;
+    background-color: $primaryColor;
 }
 
 #toTopIcon {

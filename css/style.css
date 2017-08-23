@@ -41,7 +41,8 @@ a {
   background-color: rgba(10, 10, 10, 0.75);
   display: block;
   height: 75px;
-  z-index: 200; }
+  z-index: 200;
+  border-bottom: 2px solid rgba(32, 42, 46, 0.1); }
 
 .nav {
   max-width: 1024px;
@@ -87,6 +88,10 @@ a {
 .verticalWrapper {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr); }
+
+.footer {
+  height: 450px;
+  background-color: #CA433D; }
 
 #toTopIcon {
   position: fixed;
