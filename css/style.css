@@ -1,46 +1,242 @@
-/*
-Error: Invalid CSS after "...: $contentWidth": expected "{", was ";"
-        on line 206 of /Users/florencepuiwinlo/Documents/GitHub/wellington-night-market/scss/style.scss
 
-201: 
-202: #mapContainer {
-203:     position: relative;
-204:     padding-top: 50%;
-205: <<<<<<< HEAD
-206:     max-width: $contentWidth;
-207: =======
-208: >>>>>>> 0f3e497374427c04cf45129b2e51cbe5a084cb19
-209:     margin: 0 auto;
-210:     
-211: }
+/* SASS VARIABLES */
+/* COLORS */
+/* UNCOMMENT THESE VARIABLES ONCE THEY HAVE VALUES */
+/* FONTS */
+/* FONT SIZES */
+/* BORDER RADIUS */
+/* LAYOUT WIDTHS */
+/* OPACITY */
+/* TRANSITION SPEEDS */
+/* BASE STYLES */
+h1 {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif; }
 
-Backtrace:
-/Users/florencepuiwinlo/Documents/GitHub/wellington-night-market/scss/style.scss:206
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...: $contentWidth\": expected \"{\", was \";\"\A         on line 206 of /Users/florencepuiwinlo/Documents/GitHub/wellington-night-market/scss/style.scss\A \A 201: \A 202: #mapContainer {\A 203:     position: relative;\A 204:     padding-top: 50%;\A 205: <<<<<<< HEAD\A 206:     max-width: $contentWidth;\A 207: =======\A 208: >>>>>>> 0f3e497374427c04cf45129b2e51cbe5a084cb19\A 209:     margin: 0 auto;\A 210:     \A 211: }"; }
+p {
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.noMarginOrPadding {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/* LAYOUT */
+.navContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(25, 25, 25, 0.75);
+  transition: 300ms;
+  display: block;
+  height: 75px;
+  z-index: 200; }
+
+.nav {
+  max-width: 1024px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  transition: 300ms;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif; }
+
+.slideshowSection,
+.slideshowSection img {
+  max-width: 100%; }
+
+.slideshowSection {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  top: 0; }
+  .slideshowSection img {
+    display: block; }
+
+.section {
+  position: relative;
+  display: block;
+  top: 650px;
+  background-color: white;
+  z-index: 150;
+  padding-bottom: 20px; }
+  .section h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #CA433D; }
+
+/* MODULES */
+.navLogo {
+  float: left;
+  display: block;
+  max-width: 45%;
+  max-height: 100%; }
+  .navLogo img {
+    display: inline-block;
+    max-height: 75px; }
+
+.navListItems {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.navListItem {
+  display: inline-block;
+  list-style-type: none;
+  margin: 12.5px 10px 12.5px 0; }
+  .navListItem a {
+    display: block;
+    padding: 0 20px;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: 300ms;
+    color: #CA433D; }
+
+.slideshowToggle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px); }
+  .slideshowToggle:hover {
+    cursor: pointer; }
+
+.prevToggle {
+  left: 0; }
+
+.nextToggle {
+  right: 0; }
+
+.slideshowBlurb {
+  position: absolute;
+  top: 210px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1024px;
+  border-radius: 5px;
+  background-color: rgba(25, 25, 25, 0.75); }
+  .slideshowBlurb h1, .slideshowBlurb p {
+    text-align: center; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3; }
+
+.contactWrapper {
+  margin: 0 auto;
+  max-width: 1024px; }
+
+.event {
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  grid-row: 1; }
+
+.event1 {
+  grid-column: 1;
+  background-image: url("../img/event1.png"); }
+
+.event2 {
+  grid-column: 2;
+  background-image: url("../img/event2.jpg"); }
+
+.event3 {
+  grid-column: 3;
+  background-image: url("../img/event3.png"); }
+
+.aboutBlurb {
+  margin: 0 auto;
+  max-width: 1024px; }
+  .aboutBlurb p {
+    text-align: center;
+    font-size: 20px;
+    color: #CA433D; }
+
+#mapContainer {
+  position: relative;
+  padding-top: 50%;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+#map {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50%;
+  height: 70%;
+  top: 0; }
+
+.review {
+  grid-row: 1;
+  text-align: center;
+  margin: 0 20px; }
+
+.review1 {
+  grid-column: 1; }
+
+.review2 {
+  grid-column: 2; }
+
+.review3 {
+  grid-column: 3; }
+
+.form {
+  grid-row: 1;
+  text-align: center; }
+
+.form1 {
+  padding-right: 25px; }
+
+.form2 {
+  padding-left: 25px; }
+
+.formFieldset {
+  border: none;
+  margin: 0;
+  text-align: left; }
+  .formFieldset label {
+    display: block;
+    margin-bottom: 8px; }
+  .formFieldset input[type="email"],
+  .formFieldset input[type="text"],
+  .formFieldset textarea {
+    width: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+/* REMOVES THE GRADIENT FROM BEHIND THE SLIDESHOW TOGGLES */
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none; }
+
+/* STATE */
+.navListItem a:hover,
+.is-activeNav {
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.navListItem a:focus,
+.navListItem a:hover {
+  text-decoration: none; }
+
+.notAtTop {
+  background-color: white; }
+
+/* THEME */
+
+/*# sourceMappingURL=style.css.map */
