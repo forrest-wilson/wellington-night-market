@@ -54,7 +54,6 @@ a {
 }
 
 .slideshowSection {
-    background-image: url('../img/slideshow1.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,11 +67,6 @@ a {
         display: block;
     }
 }
-
-// .reviewSection {
-//     margin: 0 auto;
-//     max-width: $contentWidth;
-// }
 
 .section {
     position: relative;
@@ -262,6 +256,18 @@ a {
 
 .notAtTop {
     background-color: rgba(255, 255, 255, 1.0);
+}
+
+.slideshowSection1{
+    background-image: url('../img/resized/CamNightPhoto_LIGHT.png');
+}
+
+.slideshowSection2{
+    background-image: url('../img/resized/NightMarketImagesResized1.png');
+}
+
+.slideshowSection3{
+    background-image: url();
 }
 
 /* THEME */
