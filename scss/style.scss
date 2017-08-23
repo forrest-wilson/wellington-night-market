@@ -202,13 +202,13 @@ a {
 #mapContainer {
     position: relative;
     padding-top: 50%;
-    
-
     margin: 0 auto;
     
 }
 #map {
     position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
     width: 50%;
     height: 70%;
     top: 0;

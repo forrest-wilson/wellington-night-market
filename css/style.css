@@ -173,6 +173,8 @@ a {
 
 #map {
   position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
   width: 50%;
   height: 70%;
   top: 0; }
