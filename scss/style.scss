@@ -29,7 +29,7 @@ a {
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $opaqueBackground;
     transition: $transitionSpeed;
     display: block;
     height: 75px;
@@ -54,7 +54,6 @@ a {
 }
 
 .slideshowSection {
-    background-image: url('../img/slideshow1.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,11 +67,6 @@ a {
         display: block;
     }
 }
-
-// .reviewSection {
-//     margin: 0 auto;
-//     max-width: $contentWidth;
-// }
 
 .section {
     position: relative;
@@ -155,7 +149,7 @@ a {
     margin: 0 auto;
     max-width: $contentWidth;
     border-radius: $borderRadius;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $opaqueBackground;
 
     h1, p {
         text-align: center;
@@ -266,11 +260,26 @@ a {
     }
 }
 
+.carousel-inner {
+    height: 100%;
+}
+
+/* REMOVES THE GRADIENT FROM BEHIND THE SLIDESHOW TOGGLES */
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
 /* STATE */
 
 .navListItem a:hover,
 .is-activeNav {
     background-color: rgba(0,0,0,0.3);
+}
+
+.navListItem a:focus,
+.navListItem a:hover {
+    text-decoration: none;
 }
 
 .notAtTop {
