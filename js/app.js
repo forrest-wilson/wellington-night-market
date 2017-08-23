@@ -2,18 +2,29 @@ $(document).ready(function() {
     // Variable declarations
     var $scrollTime = 600;
 
+    // Scroll to sections when clicked
     $('#whatsOnNavItem').click(function() {
         $('html body').animate({
-            scrollTop: $('#whatsOnHeader').offset().top - 75
+            scrollTop: $('#whatsOnSection').offset().top - 75 // the 75 is the navigation height offset
         }, $scrollTime);
     });
 
-    $('.prevToggle').click(function() {
-        console.log("something");
+    $('#aboutUsNavItem').click(function() {
+        $('html body').animate({
+            scrollTop: $('#aboutUsSection').offset().top - 75
+        }, $scrollTime);
     });
 
-    $('.nextToggle').click(function() {
-        console.log("something else");
+    $('#reviewsNavItem').click(function() {
+        $('html body').animate({
+            scrollTop: $('#reviewsSection').offset().top - 75
+        }, $scrollTime);
+    });
+
+    $('#contactNavItem').click(function() {
+        $('html body').animate({
+            scrollTop: $('#contactSection').offset().top - 75
+        }, $scrollTime);
     });
 
     // Call methods when scrolling
