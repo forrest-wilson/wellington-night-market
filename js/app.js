@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // Variable declarations
     var $scrollTime = 600;
+    $(window).scroll();
 
     // Scroll to sections when clicked
     $('#whatsOnNavItem').click(function() {
@@ -29,7 +30,10 @@ $(document).ready(function() {
 
     // When clicking on a nav item, the background sticks with it
     $('.navListItem a').click(function() {
-        $('.navListItem a').removeClass('is-activeNav');
+        $('.navListItem a').each(function() {
+            $(this).removeClass('is-activeNav');
+        });
+
         $(this).addClass('is-activeNav');
     });
 
@@ -45,22 +49,14 @@ $(document).ready(function() {
         if ($scrollPos < 575) {
             $navContainer.removeClass('notAtTop');
             $('.navLogo').removeClass('navImageChange');
+            $('.navListItem a').removeClass('blackHover');
+            $('.navListItem a').addClass('whiteHover');
         } else {
             $navContainer.addClass('notAtTop');
             $('.navLogo').addClass('navImageChange');
+            $('.navListItem a').removeClass('whiteHover');
+            $('.navListItem a').addClass('blackHover');
         }
-
-        $('.navListItem a').each(function() {
-            var $currLink = $(this);
-            var $refElement = $($currLink.attr("href"));
-
-            if (($refElement.position().top) - 75 <= $scrollPos && ($refElement.position().top) + $refElement.height() > $scrollPos) {
-                $('navListItem a').removeClass('is-activeNav');
-                $currLink.addClass('is-activeNav');
-            } else {
-                $currLink.removeClass('is-activeNav');
-            }
-        });
     });
 
 	//Google Maps JS
