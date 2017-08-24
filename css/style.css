@@ -321,10 +321,10 @@ a {
   .blurbWrapper .locationTime {
     color: #CA433D;
     border: solid 2px #CA433D;
-    width: 35%;
-    padding: 5px;
+    padding: 5px 20px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: inline-block; }
   .blurbWrapper .innerTop {
     top: 0; }
   .blurbWrapper .innerBottom {
