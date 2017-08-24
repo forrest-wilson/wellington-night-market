@@ -442,6 +442,10 @@ a {
     outline: 0;
 }
 
+.carousel-indicators .active {
+    background-color: $primaryColor;
+}
+
 .carousel-inner {
     height: 100%;
 
