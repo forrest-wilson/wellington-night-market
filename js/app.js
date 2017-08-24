@@ -32,15 +32,6 @@ $(document).ready(function() {
         }, $scrollTime);
     });
 
-    // When clicking on a nav item, the background sticks with it
-    $('.navListItem a').click(function() {
-        $('.navListItem a').each(function() {
-            $this.removeClass('is-activeNav');
-        });
-
-        $this.addClass('is-activeNav');
-    });
-
     // Click functionality for the toTopIcon
     $('#toTopIcon').click(function() {
         $htmlBody.animate({
@@ -53,6 +44,15 @@ $(document).ready(function() {
         $this.addClass('eventOverlayShowing');
     }, function() {
         $this.removeClass('eventOverlayShowing');
+    });
+
+    // When clicking on a nav item, the background sticks with it
+    $('.navListItem a').click(function() {
+        $('.navListItem a').each(function() {
+            $this.removeClass('is-activeNav');
+        });
+
+        $this.addClass('is-activeNav');
     });
 
     // Call methods when scrolling
@@ -70,6 +70,7 @@ $(document).ready(function() {
             $navListItemAnchor.addClass('whiteHover');
             $('#toTopIcon').removeClass('toTopShowing');
             $('.is-activeNav').removeClass('is-activeNavDark');
+
         } else {
             $navContainer.addClass('notAtTop');
             $navLogo.addClass('navImageChange');
