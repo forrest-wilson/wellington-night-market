@@ -421,18 +421,20 @@ a {
 /* ======== STATE ======== */
 /* ======================= */
 .is-activeNav {
-  text-decoration: underline; }
+  color: white !important; }
+
+.is-activeNavDark {
+  color: #202a2e !important; }
 
 .whiteHover:hover,
 .blackHover:hover {
-  transition: 300ms;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .whiteHover:hover {
   color: white; }
 
 .blackHover:hover {
-  color: black; }
+  color: #202a2e !important; }
 
 .notAtTop {
   background-color: rgba(255, 255, 255, 0.9); }

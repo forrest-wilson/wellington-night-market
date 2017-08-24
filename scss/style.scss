@@ -544,13 +544,16 @@ a {
 /* ======================= */
 
 .is-activeNav {
-    text-decoration: underline;
+    color: $secondaryColor!important;
+}
+
+.is-activeNavDark {
+    color: $darkColor!important;
 }
 
 .whiteHover:hover,
 .blackHover:hover {
-    transition: $transitionSpeed;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .whiteHover:hover {
@@ -558,7 +561,7 @@ a {
 }
 
 .blackHover:hover {
-    color: black;
+    color: $darkColor!important;
 }
 
 .notAtTop {

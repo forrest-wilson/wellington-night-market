@@ -1,5 +1,6 @@
 $(document).ready(function() {
     // Variable declarations
+    var $this = $(this);
     var $scrollTime = 600;
     var $navContainer = $('#navContainer');
     var $htmlBody = $('html body');
@@ -34,10 +35,10 @@ $(document).ready(function() {
     // When clicking on a nav item, the background sticks with it
     $('.navListItem a').click(function() {
         $('.navListItem a').each(function() {
-            $(this).removeClass('is-activeNav');
+            $this.removeClass('is-activeNav');
         });
 
-        $(this).addClass('is-activeNav');
+        $this.addClass('is-activeNav');
     });
 
     // Click functionality for the toTopIcon
@@ -49,9 +50,9 @@ $(document).ready(function() {
 
     // Event hover function
     $('.eventOverlay').hover(function() {
-        $(this).addClass('eventOverlayShowing');
+        $this.addClass('eventOverlayShowing');
     }, function() {
-        $(this).removeClass('eventOverlayShowing');
+        $this.removeClass('eventOverlayShowing');
     });
 
     // Call methods when scrolling
@@ -68,12 +69,14 @@ $(document).ready(function() {
             $navListItemAnchor.removeClass('blackHover');
             $navListItemAnchor.addClass('whiteHover');
             $('#toTopIcon').removeClass('toTopShowing');
+            $('.is-activeNav').removeClass('is-activeNavDark');
         } else {
             $navContainer.addClass('notAtTop');
             $navLogo.addClass('navImageChange');
             $navListItemAnchor.removeClass('whiteHover');
             $navListItemAnchor.addClass('blackHover');
             $('#toTopIcon').addClass('toTopShowing');
+            $('.is-activeNav').addClass('is-activeNavDark');
         }
 
         // $('section').each(function(i) {
