@@ -241,8 +241,10 @@ a {
   .eventOverlay .inner h3 {
     font-family: "Oswald", sans-serif;
     margin-bottom: 10px; }
+  .eventOverlay h3 {
+    color: #CA433D;
+    text-align: center; }
   .eventOverlay h2,
-  .eventOverlay h3,
   .eventOverlay p {
     color: white;
     text-align: center; }
@@ -250,15 +252,19 @@ a {
 .eventOverlayShowing {
   opacity: 1; }
 
-.aboutBlurb {
-  margin: 0 auto;
-  max-width: 1024px; }
-  .aboutBlurb p {
-    text-align: center;
-    font-size: 20px;
-    color: #CA433D;
-    padding-bottom: 50px; }
+/*Moved the about section
 
+.aboutBlurb {
+    margin: 0 auto;
+    max-width: $contentWidth;
+
+    p {
+        text-align: center;
+        font-size: $navFontSize;
+        color: $primaryColor;
+        padding-bottom: 50px;
+    }
+}*/
 #mapContainer {
   position: relative;
   height: 500px;
@@ -304,13 +310,21 @@ a {
 
 .blurbWrapper {
   position: relative;
-  padding-left: 20px;
-  top: 42px; }
+  padding-left: 35px;
+  top: 50px; }
   .blurbWrapper h1 {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 20px; }
   .blurbWrapper p {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     color: white; }
+  .blurbWrapper .locationTime {
+    color: #CA433D;
+    border: solid 2px #CA433D;
+    width: 35%;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto; }
   .blurbWrapper .innerTop {
     top: 0; }
   .blurbWrapper .innerBottom {
@@ -386,8 +400,12 @@ a {
 .carousel-control.left {
   background-image: none; }
 
+.reviewSection div {
+  padding: 0px; }
+
 .starRatingWrapper {
-  font-size: 20px; }
+  font-size: 40px;
+  padding-bottom: 5px; }
 
 .socialIcons {
   grid-column: 1;

@@ -298,8 +298,11 @@ a {
         margin-bottom: 10px;
     }
 
+    h3 {
+        color:$primaryColor;
+        text-align: center;
+    }
     h2,
-    h3,
     p {
         color: $secondaryColor;
         text-align: center;
@@ -309,6 +312,8 @@ a {
 .eventOverlayShowing {
     opacity: 1;
 }
+
+/*Moved the about section
 
 .aboutBlurb {
     margin: 0 auto;
@@ -320,7 +325,7 @@ a {
         color: $primaryColor;
         padding-bottom: 50px;
     }
-}
+}*/
 
 #mapContainer {
     position: relative;
@@ -378,16 +383,25 @@ a {
 
 .blurbWrapper {
     position: relative;
-    padding-left: 20px;
-    top: 42px;
+    padding-left: 35px;
+    top: 50px;
 
     h1 {
         padding-top: 0;
-    }
+        padding-bottom:20px;
+    } 
 
     p {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         color: $secondaryColor;
+    }
+    .locationTime {
+        color: $primaryColor;
+        border: solid 2px $primaryColor;
+        width:35%;
+        padding:5px;
+        text-align: center;
+        margin:0 auto;
     }
 
     .innerTop {
@@ -492,8 +506,13 @@ a {
     background-image: none;
 }
 
+.reviewSection div {
+    padding:0px;
+}
+
 .starRatingWrapper {
-    font-size: $navFontSize;
+    font-size: $headerFontSize;
+    padding-bottom:5px;
 }
 
 .socialIcons {
