@@ -442,8 +442,10 @@ a {
     outline: 0;
 }
 
-.carousel-indicators .active {
-    background-color: $primaryColor;
+.carousel-indicators {
+    .active {
+        background-color: $primaryColor;
+    }
 }
 
 .carousel-inner {
