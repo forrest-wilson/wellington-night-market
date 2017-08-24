@@ -1,6 +1,5 @@
 $(document).ready(function() {
     // Variable declarations
-    var $this = $(this);
     var $scrollTime = 600;
     var $navContainer = $('#navContainer');
     var $htmlBody = $('html body');
@@ -41,18 +40,18 @@ $(document).ready(function() {
 
     // Event hover function
     $('.eventOverlay').hover(function() {
-        $this.addClass('eventOverlayShowing');
+        $(this).addClass('eventOverlayShowing');
     }, function() {
-        $this.removeClass('eventOverlayShowing');
+        $(this).removeClass('eventOverlayShowing');
     });
 
     // When clicking on a nav item, the background sticks with it
     $('.navListItem a').click(function() {
         $('.navListItem a').each(function() {
-            $this.removeClass('is-activeNav');
+            $(this).removeClass('is-activeNav');
         });
 
-        $this.addClass('is-activeNav');
+        $(this).addClass('is-activeNav');
     });
 
     // Call methods when scrolling
