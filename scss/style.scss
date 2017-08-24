@@ -86,6 +86,13 @@ a {
     }
 }
 
+.whatsOnSection {
+    h1 {
+        padding: 20px 0;
+        background-color: $darkColor;
+    }
+}
+
 .wrapper,
 .verticalWrapper {
     display: grid;
@@ -270,11 +277,15 @@ a {
     background-color: $darkColorDarkOpaque;
     position: relative;
     z-index: 500;
-    display: block;
+    display: grid;
+    grid-column: repeat(3, 1fr);
     height: 100%;
-    cursor: pointer;
     opacity: 0;
     transition: $transitionSpeed;
+
+    .inner {
+        grid-row: 2 / 3;
+    }
 
     h2,
     h3,
@@ -320,7 +331,6 @@ a {
 .locationSection {
     max-width: $mapContentWidth;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .review {
@@ -357,15 +367,24 @@ a {
 
 .blurbWrapper {
     position: relative;
-    top: 120px;
+    padding-left: 20px;
+    top: 42px;
 
     h1 {
         padding-top: 0;
     }
 
     p {
-        padding-bottom: 10px;
+        padding-bottom: 40px;
         color: $secondaryColor;
+    }
+
+    .innerTop {
+        top: 0;
+    }
+
+    .innerBottom {
+        bottom: 0;
     }
 }
 
@@ -557,4 +576,5 @@ a {
 .aboutUsWrapper {
     max-width: $mapContentWidth;
     margin: 0 auto;
+    padding: 50px 0;
 }

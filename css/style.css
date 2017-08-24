@@ -78,6 +78,10 @@ a {
     padding: 40px 0;
     color: #CA433D; }
 
+.whatsOnSection h1 {
+  padding: 20px 0;
+  background-color: #202a2e; }
+
 .wrapper,
 .verticalWrapper {
   display: grid; }
@@ -223,11 +227,13 @@ a {
   background-color: rgba(32, 42, 46, 0.6);
   position: relative;
   z-index: 500;
-  display: block;
+  display: grid;
+  grid-column: repeat(3, 1fr);
   height: 100%;
-  cursor: pointer;
   opacity: 0;
   transition: 300ms; }
+  .eventOverlay .inner {
+    grid-row: 2 / 3; }
   .eventOverlay h2,
   .eventOverlay h3,
   .eventOverlay p {
@@ -262,8 +268,7 @@ a {
 
 .locationSection {
   max-width: 1200px;
-  text-align: center;
-  margin-bottom: 50px; }
+  text-align: center; }
 
 .review {
   grid-row: 1;
@@ -292,12 +297,17 @@ a {
 
 .blurbWrapper {
   position: relative;
-  top: 120px; }
+  padding-left: 20px;
+  top: 42px; }
   .blurbWrapper h1 {
     padding-top: 0; }
   .blurbWrapper p {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     color: white; }
+  .blurbWrapper .innerTop {
+    top: 0; }
+  .blurbWrapper .innerBottom {
+    bottom: 0; }
 
 .form {
   grid-row: 1;
@@ -437,6 +447,7 @@ a {
 /* ======================= */
 .aboutUsWrapper {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 50px 0; }
 
 /*# sourceMappingURL=style.css.map */
