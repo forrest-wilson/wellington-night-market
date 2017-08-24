@@ -274,17 +274,28 @@ a {
 }
 
 .eventOverlay {
-    background-color: $darkColorDarkOpaque;
+    background-color: $navOpaqueBackground;
     position: relative;
     z-index: 500;
     display: grid;
-    grid-column: repeat(3, 1fr);
     height: 100%;
     opacity: 0;
     transition: $transitionSpeed;
 
     .inner {
         grid-row: 2 / 3;
+        padding: 10px;
+    }
+
+    .inner p {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .inner h2,
+    .inner h3 {
+        font-family: $fontPrimary;
+        margin-bottom: 10px;
     }
 
     h2,

@@ -224,16 +224,23 @@ a {
   background-image: url("../img/event3.png"); }
 
 .eventOverlay {
-  background-color: rgba(32, 42, 46, 0.6);
+  background-color: rgba(10, 10, 10, 0.75);
   position: relative;
   z-index: 500;
   display: grid;
-  grid-column: repeat(3, 1fr);
   height: 100%;
   opacity: 0;
   transition: 300ms; }
   .eventOverlay .inner {
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    padding: 10px; }
+  .eventOverlay .inner p {
+    max-width: 400px;
+    margin: 0 auto; }
+  .eventOverlay .inner h2,
+  .eventOverlay .inner h3 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px; }
   .eventOverlay h2,
   .eventOverlay h3,
   .eventOverlay p {
