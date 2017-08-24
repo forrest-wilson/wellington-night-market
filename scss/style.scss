@@ -19,6 +19,10 @@ p {
     font-family: $fontSecondary;
 }
 
+a {
+    color: $primaryColor;
+}
+
 /* ======================== */
 /* ======== LAYOUT ======== */
 /* ======================== */
@@ -506,6 +510,14 @@ p {
     color: $secondaryColor;
     text-align: center;
     @include columnPadding;
+
+    a {
+        transition: $transitionSpeed;
+        &:hover {
+            color: $secondaryColor;
+            text-decoration: none;
+        }
+    }
 }
 
 .footerColumn1 {
