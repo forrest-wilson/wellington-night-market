@@ -1,0 +1,19 @@
+@mixin bannerPaddingAndMargin {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+@mixin noPaddingOrMargin {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin headingPaddingAndMargin {
+    padding: 20px 0;
+    margin: 0;
+}
+
+@mixin columnPadding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
