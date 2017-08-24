@@ -369,6 +369,9 @@ a {
 .carousel-control.left {
   background-image: none; }
 
+.starRatingWrapper {
+  font-size: 20px; }
+
 .socialIcons {
   grid-column: 1;
   background-color: #CA433D;

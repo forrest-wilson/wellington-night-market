@@ -462,6 +462,10 @@ a {
     background-image: none;
 }
 
+.starRatingWrapper {
+    font-size: $navFontSize;
+}
+
 .socialIcons {
     grid-column: 1;
     background-color: $primaryColor;
