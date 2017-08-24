@@ -69,27 +69,27 @@
 			<h1 class="noMarginOrPadding">WHAT'S ON</h1>
 			<div class="wrapper">
 				<article class="event event1">
-					<span class="eventOverlay">
+					<div class="eventOverlay">
 						<h2 class="noMarginOrPadding">SOME HEADING</h2>
 						<h3 class="noMarginOrPadding">some subheading</h3>
 						<p class="noMarginOrPadding">here is some info</p>
-					</span>
+					</div>
 				</article>
 
 				<article class="event event2">
-					<span class="eventOverlay">
+					<div class="eventOverlay">
 						<h2 class="noMarginOrPadding">SOME HEADING</h2>
 						<h3 class="noMarginOrPadding">some subheading</h3>
 						<p class="noMarginOrPadding">here is some info</p>
-					</span>
+					</div>
 				</article>
 
 				<article class="event event3">
-					<span class="eventOverlay">
+					<div class="eventOverlay">
 						<h2 class="noMarginOrPadding">SOME HEADING</h2>
 						<h3 class="noMarginOrPadding">some subheading</h3>
 						<p class="noMarginOrPadding">here is some info</p>
-					</span>
+					</div>
 				</article>
 			</div>
 		</section>
@@ -108,7 +108,7 @@
 					</div>
 				</article>
 
-				<article id="locationSection" class="section locationSection locationBlurb">
+				<article class="section locationSection locationBlurb">
 					<div class="blurbWrapper">
 						<h1 class="noMarginOrPadding">LOCATIONS</h1>
 						<p>Every Friday at 116 Cuba Street, Wellington</p>
@@ -150,17 +150,17 @@
 
 						<fieldset class="formFieldset">
 							<label for="name">Name:</label>
-							<input type="text" name="name">
+							<input type="text" name="name" id="form1-name">
 						</fieldset>
 
 						<fieldset class="formFieldset">
 							<label for="email">Email:</label>
-							<input type="text" name="email">
+							<input type="text" name="email" id="email">
 						</fieldset>
 
 						<fieldset class="formFieldset">
 							<label for="message">Message:</label>
-							<textarea rows="5"></textarea>
+							<textarea rows="5" id="message"></textarea>
 						</fieldset>
 
 						<button class="submitButton" type="button">Submit</button>
@@ -172,17 +172,17 @@
 
 						<fieldset class="formFieldset">
 							<label for="name">Name:</label>
-							<input type="text" name="name">
+							<input type="text" name="name" id="name">
 						</fieldset>
 
 						<fieldset class="formFieldset">
 							<label for="email">Email:</label>
-							<input type="text" name="email">
+							<input type="text" name="email" id="email">
 						</fieldset>
 
 						<fieldset class="formFieldset">
 							<label for="message">Message:</label>
-							<textarea rows="5"></textarea>
+							<textarea rows="5" id="message"></textarea>
 						</fieldset>
 
 						<button class="submitButton" type="button">Submit</button>
@@ -202,27 +202,27 @@
 	<aside class="socialIcons verticalWrapper">
 		<span class="socialIcon socialIcon-facebook">
 			<a href="https://www.facebook.com/WellingtonNightMarket/?ref=br_rs" target="_blank">
-				<img src="img/social/fb-white.svg">
+				<img src="img/social/fb-white.svg" alt="Facebook Logo">
 			</a>
 		</span>
 
 		<span class="socialIcon socialIcon-instagram">
 			<a href="https://www.instagram.com/wellingtonnightmarket/?hl=en" target="_blank">
-				<img src="img/social/insta-white.svg">
+				<img src="img/social/insta-white.svg" alt="Instagram Logo">
 			</a>
 		</span>
 
 		<span class="socialIcon socialIcon-youtube">
 			<a href="https://www.youtube.com/channel/UCX3GS5E-jYRmo2T_tD4-tWQ" target="_blank">
-				<img src="img/social/yt-white-square.png">
+				<img src="img/social/yt-white-square.png" alt="YouTube Logo">
 			</a>
 		</span>
 	</aside>
 
 	<!-- TO TOP ICON -->
-	<span id="toTopIcon" class="toTopIcon">
+	<aside id="toTopIcon" class="toTopIcon">
 		<p class="noMarginOrPadding">TOP</p>
-	</span>
+	</aside>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
