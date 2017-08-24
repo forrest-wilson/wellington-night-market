@@ -46,12 +46,22 @@ $(document).ready(function() {
     });
 
     // When clicking on a nav item, the background sticks with it
-    $('.navListItem a').click(function() {
+    $('.whiteHover').click(function() {
         $('.navListItem a').each(function() {
             $(this).removeClass('is-activeNav');
+            $(this).removeClass('is-activeNavDark');
         });
 
         $(this).addClass('is-activeNav');
+    });
+
+    $('.blackHover').click(function() {
+        $('.navListItem a').each(function() {
+            $(this).removeClass('is-activeNav');
+            $(this).removeClass('is-activeNavDark');
+        });
+
+        $(this).addClass('is-activeNavDark');
     });
 
     // Call methods when scrolling
@@ -68,8 +78,7 @@ $(document).ready(function() {
             $navListItemAnchor.removeClass('blackHover');
             $navListItemAnchor.addClass('whiteHover');
             $('#toTopIcon').removeClass('toTopShowing');
-            $('.is-activeNav').removeClass('is-activeNavDark');
-
+            $navListItemAnchor.removeClass('is-activeNavDark');
         } else {
             $navContainer.addClass('notAtTop');
             $navLogo.addClass('navImageChange');
@@ -78,16 +87,6 @@ $(document).ready(function() {
             $('#toTopIcon').addClass('toTopShowing');
             $('.is-activeNav').addClass('is-activeNavDark');
         }
-
-        // $('section').each(function(i) {
-        //     if ($(this).position().top <= $scrollPos - 75) {
-        //         $('.navListItem a.is-activeNav').removeClass('is-activeNav');
-        //         $('.navListItem a').addClass('is-activeNav');
-        //     } else {
-        //         $('.navListItem a.is-activeNav').removeClass('is-activeNav');
-        //         $('.navListItem:first a').eq(i).addClass('is-activeNav');
-        //     }
-        // });
     }).scroll(); // Self executing scroll on page load to initialize elements that rely on the scroll function being triggered
 
 	//Google Maps JS
