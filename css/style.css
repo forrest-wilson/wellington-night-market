@@ -27,7 +27,7 @@ p {
   font-family: "Roboto Condensed", sans-serif; }
 
 a {
-  color: #CA433D; }
+  color: #ca433d; }
 
 /* ======================== */
 /* ======== LAYOUT ======== */
@@ -80,7 +80,7 @@ a {
     text-align: center;
     padding: 20px 0;
     margin: 0;
-    color: #CA433D; }
+    color: #ca433d; }
 
 .whatsOnSection h1 {
   background-color: #232323; }
@@ -103,7 +103,7 @@ a {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: #CA433D;
+  background-color: #ca433d;
   width: 50px;
   height: 50px;
   z-index: 1000;
@@ -154,7 +154,7 @@ a {
     line-height: 50px;
     border-radius: 5px;
     transition: 300ms;
-    color: #CA433D; }
+    color: #ca433d; }
 
 .slideshowToggle {
   width: 50px;
@@ -171,7 +171,7 @@ a {
   right: 10% !important; }
 
 .carousel-indicators .active {
-  background-color: #CA433D; }
+  background-color: #ca433d; }
 
 .carousel-inner {
   height: 100%; }
@@ -210,7 +210,7 @@ a {
     letter-spacing: 2px;
     margin-bottom: 0px; }
   .slideshowBlurb p {
-    color: #CA433D;
+    color: #ca433d;
     font-size: 20px;
     letter-spacing: 0.5px; }
 
@@ -260,7 +260,7 @@ a {
     font-family: "Oswald", sans-serif;
     margin-bottom: 10px; }
   .eventOverlay h3 {
-    color: #CA433D;
+    color: #ca433d;
     text-align: center; }
   .eventOverlay h2,
   .eventOverlay p {
@@ -327,8 +327,8 @@ a {
     padding-bottom: 20px;
     color: white; }
   .blurbWrapper .locationTime {
-    color: #CA433D;
-    border: solid 2px #CA433D;
+    color: #ca433d;
+    border: solid 2px #ca433d;
     padding: 5px 20px;
     text-align: center;
     margin: 0 auto;
@@ -376,11 +376,11 @@ a {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
-    border: 2px solid #CA433D;
+    border: 2px solid #ca433d;
     outline: 0; }
 
 .submitButton {
-  background-color: #CA433D;
+  background-color: #ca433d;
   border: none;
   border-radius: 5px;
   color: white;
@@ -424,7 +424,7 @@ a {
 
 .socialIcons {
   grid-column: 1;
-  background-color: #CA433D;
+  background-color: #ca433d;
   position: fixed;
   bottom: 25px;
   left: 0;
@@ -491,5 +491,3 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0; }
-
-/*# sourceMappingURL=style.css.map */

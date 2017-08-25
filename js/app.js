@@ -96,8 +96,15 @@ $(document).ready(function() {
 			var mapOptions = {
 				zoom: 19,
 				center: myLatlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [
+                  {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                  {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                  {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]}
+                        ]
+			     }
+
+
 
 		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 		//Callout Content
@@ -105,7 +112,8 @@ $(document).ready(function() {
 		//Set window width + content
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString,
-			maxWidth: 500
+			maxWidth: 500,
+
 		});
 
 		//Add Marker
