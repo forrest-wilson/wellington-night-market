@@ -210,8 +210,22 @@ a {
 .carousel-inner {
     height: 100%;
 
-    .item img {
-        min-width: 1200px;
+    .item {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .item:nth-child(1) {
+        background-image: url('../img/slideshow/slideshow1.png');
+    }
+
+    .item:nth-child(2) {
+        background-image: url('../img/slideshow/slideshow2.png');
+    }
+
+    .item:nth-child(3) {
+        background-image: url('../img/slideshow/slideshow3.png');
     }
 }
 
