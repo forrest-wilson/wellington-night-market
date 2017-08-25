@@ -69,6 +69,14 @@ $(document).ready(function() {
         // Variable declaration to help with browser caching (decrease load times)
         var $scrollPos = $(document).scrollTop();
 
+        // var $target = $('.item');
+        // var $targetHeight = $target.outerHeight();
+        // var $scrollPercent = ($targetHeight - window.scrollY) / $targetHeight;
+        //
+        // if ($scrollPercent >= 0) {
+        //     $target.css('opacity', $scrollPercent);
+        // }
+
         // Adds and removes the notAtTop class depending on scroll position
         // Change the number value in the if() statement to change the point
         // at which the function runs
