@@ -5,7 +5,10 @@ $(document).ready(function() {
     var $htmlBody = $('html body');
     var $navLogo = $('.navLogo');
     var $navListItemAnchor = $('.navListItem a');
+    var $isActiveNav = $('.is-activeNav');
     var $toTopIcon = $('#toTopIcon');
+    var $whiteHover = $('.whiteHover');
+    var $blackHover = $('.blackHover');
 
     // Scroll to sections when clicked
     $('#whatsOnNavItem').click(function() {
@@ -33,7 +36,7 @@ $(document).ready(function() {
     });
 
     // Click functionality for the toTopIcon
-    $('#toTopIcon').click(function() {
+    $toTopIcon.click(function() {
         $htmlBody.animate({
             scrollTop: $htmlBody.offset().top
         }, $scrollTime);
@@ -47,8 +50,8 @@ $(document).ready(function() {
     });
 
     // When clicking on a nav item, the background sticks with it
-    $('.whiteHover').click(function() {
-        $('.navListItem a').each(function() {
+    $whiteHover.click(function() {
+        $navListItemAnchor.each(function() {
             $(this).removeClass('is-activeNav');
             $(this).removeClass('is-activeNavDark');
         });
@@ -56,8 +59,8 @@ $(document).ready(function() {
         $(this).addClass('is-activeNav');
     });
 
-    $('.blackHover').click(function() {
-        $('.navListItem a').each(function() {
+    $blackHover.click(function() {
+        $navListItemAnchor.each(function() {
             $(this).removeClass('is-activeNav');
             $(this).removeClass('is-activeNavDark');
         });
