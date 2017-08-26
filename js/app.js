@@ -11,28 +11,14 @@ $(document).ready(function() {
     var $blackHover = $('.blackHover');
 
     // Scroll to sections when clicked
-    $('#whatsOnNavItem').click(function() {
-        $htmlBody.animate({
-            scrollTop: $('#whatsOnSection').offset().top - 75 // the 75 is the navigation height offset
-        }, $scrollTime);
-    });
+    $('.navListItem').click(function() {
+        var $href = $(this).children('a').attr('href');
 
-    $('#aboutUsNavItem').click(function() {
-        $htmlBody.animate({
-            scrollTop: $('#aboutUsSection').offset().top - 75
-        }, $scrollTime);
-    });
-
-    $('#reviewsNavItem').click(function() {
-        $htmlBody.animate({
-            scrollTop: $('#reviewsSection').offset().top - 75
-        }, $scrollTime);
-    });
-
-    $('#contactNavItem').click(function() {
-        $htmlBody.animate({
-            scrollTop: $('#contactSection').offset().top - 75
-        }, $scrollTime);
+        $(this).each(function() {
+            $htmlBody.animate({
+                scrollTop: $($href).offset().top - 75
+            }, $scrollTime);
+        });
     });
 
     // Click functionality for the toTopIcon
