@@ -5,13 +5,15 @@ $(document).ready(function() {
     var $htmlBody = $('html body');
     var $navLogo = $('.navLogo');
     var $navListItemAnchor = $('.navListItem a');
+    var $navListItem = $('.navListItem');
     var $isActiveNav = $('.is-activeNav');
     var $toTopIcon = $('#toTopIcon');
     var $whiteHover = $('.whiteHover');
     var $blackHover = $('.blackHover');
+    var $eventOverlay = $('.eventOverlay');
 
-    // Scroll to sections when clicked
-    $('.navListItem').click(function() {
+    // Scroll to sections when clicked (generic function)
+    $navListItem.click(function() {
         var $href = $(this).children('a').attr('href');
 
         $(this).each(function() {
@@ -29,7 +31,7 @@ $(document).ready(function() {
     });
 
     // Event hover function
-    $('.eventOverlay').hover(function() {
+    $eventOverlay.hover(function() {
         $(this).addClass('eventOverlayShowing');
     }, function() {
         $(this).removeClass('eventOverlayShowing');
