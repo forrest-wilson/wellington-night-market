@@ -134,8 +134,7 @@ a {
         line-height: 30px;
         padding: 10px 0;
         text-align: center;
-        color: $secondaryColor;
-        font-size: $paragraphFontSize;
+        @include fontSizeFamilyColor($paragraphFontSize, $color: $secondaryColor);
     }
 }
 
