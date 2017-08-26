@@ -25,12 +25,18 @@ a {
     color: $primaryColor;
 }
 
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* ======================== */
 /* ======== LAYOUT ======== */
 /* ======================== */
 
-.nav,
-.navContainer {
+.navContainer,
+.nav {
     left: 0;
     right: 0;
     top: 0;
@@ -66,17 +72,17 @@ a {
     position: fixed;
     z-index: 50;
     top: 0;
+}
 
-    img {
-        display: block;
-    }
+.main,
+.footer {
+    position: relative;
+    top: 650px;
+    z-index: 150;
 }
 
 .section {
-    position: relative;
-    top: 650px;
     background-color: $secondaryColor;
-    z-index: 150;
 
     h1 {
         text-align: center;
@@ -149,26 +155,20 @@ a {
 .navListItems {
     float: right;
     @include noPaddingOrMargin;
-}
 
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
+    .navListItem {
+        display: inline-block;
+        list-style-type: none;
+        margin: 12.5px 10px 12.5px 0;
 
-.navListItem {
-    display: inline-block;
-    list-style-type: none;
-    margin: 12.5px 10px 12.5px 0;
-
-    a {
-        display: block;
-        padding: 0 20px;
-        line-height: 50px;
-        border-radius: $borderRadius;
-        transition: $transitionSpeed;
-        color: $primaryColor;
+        a {
+            display: block;
+            padding: 0 20px;
+            line-height: 50px;
+            border-radius: $borderRadius;
+            transition: $transitionSpeed;
+            color: $primaryColor;
+        }
     }
 }
 
@@ -593,7 +593,7 @@ a {
 }
 
 .whiteHover:hover {
-    color: $secondaryColor;
+    color: $secondaryColor!important;
 }
 
 .blackHover:hover {
