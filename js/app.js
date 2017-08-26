@@ -82,6 +82,9 @@ $(document).ready(function() {
             $navLogo.addClass('navImageChange');
             $navListItemAnchor.removeClass('whiteHover');
             $navListItemAnchor.addClass('blackHover');
+            // DON'T replace this line
+            // Unexpected behavior happens when trying to
+            // replace the class call with a stored variable
             $('.is-activeNav').addClass('is-activeNavDark');
         }
 
@@ -93,8 +96,7 @@ $(document).ready(function() {
         }
     }).scroll(); // Self executing scroll on page load to initialize elements that rely on the scroll function being triggered
 
-	//Google Maps JS
-	//Set Map
+	// Google Maps JS
 	function initialize() {
 			var myLatlng = new google.maps.LatLng(-41.2926356,174.7760156,19.82);
 			var mapOptions = {
@@ -102,87 +104,97 @@ $(document).ready(function() {
 				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
                 styles: [
-                   {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-                   {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-                   {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-                   {
-                     featureType: 'administrative.locality',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#d59563'}]
-                   },
-                   {
-                     featureType: 'poi',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#d59563'}]
-                   },
-                   {
-                     featureType: 'poi.park',
-                     elementType: 'geometry',
-                     stylers: [{color: '#263c3f'}]
-                   },
-                   {
-                     featureType: 'poi.park',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#6b9a76'}]
-                   },
-                   {
-                     featureType: 'road',
-                     elementType: 'geometry',
-                     stylers: [{color: '#38414e'}]
-                   },
-                   {
-                     featureType: 'road',
-                     elementType: 'geometry.stroke',
-                     stylers: [{color: '#212a37'}]
-                   },
-                   {
-                     featureType: 'road',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#9ca5b3'}]
-                   },
-                   {
-                     featureType: 'road.highway',
-                     elementType: 'geometry',
-                     stylers: [{color: '#746855'}]
-                   },
-                   {
-                     featureType: 'road.highway',
-                     elementType: 'geometry.stroke',
-                     stylers: [{color: '#1f2835'}]
-                   },
-                   {
-                     featureType: 'road.highway',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#f3d19c'}]
-                   },
-                   {
-                     featureType: 'transit',
-                     elementType: 'geometry',
-                     stylers: [{color: '#2f3948'}]
-                   },
-                   {
-                     featureType: 'transit.station',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#d59563'}]
-                   },
-                   {
-                     featureType: 'water',
-                     elementType: 'geometry',
-                     stylers: [{color: '#17263c'}]
-                   },
-                   {
-                     featureType: 'water',
-                     elementType: 'labels.text.fill',
-                     stylers: [{color: '#515c6d'}]
-                   },
-                   {
-                     featureType: 'water',
-                     elementType: 'labels.text.stroke',
-                     stylers: [{color: '#17263c'}]
-                   }
-                 ]
-             }
+                    {
+                        elementType: 'geometry',
+                        stylers: [{color: '#242f3e'}]
+                    },
+                    {
+                        elementType: 'labels.text.stroke',
+                        stylers: [{color: '#242f3e'}]
+                    },
+                    {
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#746855'}]
+                    },
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                    },
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{color: '#263c3f'}]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#6b9a76'}]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{color: '#38414e'}]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#212a37'}]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#9ca5b3'}]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{color: '#746855'}]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#1f2835'}]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#f3d19c'}]
+                    },
+                    {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{color: '#2f3948'}]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{color: '#17263c'}]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#515c6d'}]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{color: '#17263c'}]
+                    }
+                ]
+            }
 
+        // Set Map
 		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 		//Callout Content
 		var contentString = 'Wellington Night Market';
