@@ -61,8 +61,8 @@ a {
 .slideshowSection {
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 650px;
   width: 100%;
   position: fixed;
@@ -178,6 +178,7 @@ a {
   .carousel-inner .item {
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%; }
   .carousel-inner .item:nth-child(1) {
     background-image: url("../img/slideshow/slideshow1.png"); }
@@ -231,9 +232,10 @@ a {
   max-width: 1024px; }
 
 .event {
-  height: 350px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
   grid-row: 1;
   max-width: 100%; }
 

@@ -17,3 +17,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+@mixin centeredBackgrounds {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

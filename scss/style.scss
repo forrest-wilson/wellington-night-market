@@ -63,9 +63,7 @@ a {
 
 .slideshowSection {
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include centeredBackgrounds;
     height: 650px;
     width: 100%;
     position: fixed;
@@ -211,8 +209,7 @@ a {
     height: 100%;
 
     .item {
-        background-position: center;
-        background-size: cover;
+        @include centeredBackgrounds;
         height: 100%;
     }
 
@@ -287,9 +284,8 @@ a {
 }
 
 .event {
+    @include centeredBackgrounds;
     height: 350px;
-    background-position: center;
-    background-size: cover;
     grid-row: 1;
     max-width: 100%;
 }
