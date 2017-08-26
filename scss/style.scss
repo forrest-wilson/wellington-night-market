@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2 {
-    @include fontSizeFamily($headerFontSize, $fontPrimary);
+    @include fontSizeFamilyColor($headerFontSize, $fontPrimary);
 }
 
 h3 {
@@ -18,7 +18,7 @@ h3 {
 }
 
 p {
-    @include fontSizeFamily($navFontSize, $fontSecondary);
+    @include fontSizeFamilyColor($navFontSize, $fontSecondary);
 }
 
 a {
@@ -50,7 +50,7 @@ a {
     max-width: $contentWidth;
     height: 100%;
     margin: 0 auto;
-    @include fontSizeFamily($navFontSize, $fontPrimary);
+    @include fontSizeFamilyColor($navFontSize, $fontPrimary);
 }
 
 .slideshowSection,
@@ -468,8 +468,7 @@ a {
     input[type="text"],
     textarea,
     label {
-        @include fontSizeFamily($paragraphFontSize, $fontSecondary);
-        color: $darkColor;
+        @include fontSizeFamilyColor($paragraphFontSize, $fontSecondary, $darkColor);
     }
 
     input[type="email"],
@@ -487,14 +486,13 @@ a {
     background-color: $primaryColor;
     border: none;
     border-radius: $borderRadius;
-    color: $secondaryColor;
     padding: 15px 80px;
     margin-bottom: 40px;
     margin-top: 10px;
     text-decoration: none;
     letter-spacing: $letterSpacing;
     outline: 0;
-    @include fontSizeFamily($navFontSize, $fontSecondary);
+    @include fontSizeFamilyColor($navFontSize, $fontSecondary, $secondaryColor);
 }
 
 .reviewSection {

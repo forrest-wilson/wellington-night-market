@@ -24,7 +24,8 @@
     background-repeat: no-repeat;
 }
 
-@mixin fontSizeFamily($size, $family) {
+@mixin fontSizeFamilyColor($size, $family, $color: null) {
     font-size: $size;
     font-family: $family;
+    color: $color;
 }
