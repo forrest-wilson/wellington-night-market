@@ -10,8 +10,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2 {
-    font-size: $headerFontSize;
-    font-family: $fontPrimary;
+    @include fontSizeFamily($headerFontSize, $fontPrimary);
 }
 
 h3 {
@@ -19,8 +18,7 @@ h3 {
 }
 
 p {
-    font-size: $navFontSize;
-    font-family: $fontSecondary;
+    @include fontSizeFamily($navFontSize, $fontSecondary);
 }
 
 a {
@@ -52,8 +50,7 @@ a {
     max-width: $contentWidth;
     height: 100%;
     margin: 0 auto;
-    font-size: $navFontSize;
-    font-family: $fontPrimary;
+    @include fontSizeFamily($navFontSize, $fontPrimary);
 }
 
 .slideshowSection,
@@ -471,8 +468,7 @@ a {
     input[type="text"],
     textarea,
     label {
-        font-family: $fontSecondary;
-        font-size: $paragraphFontSize;
+        @include fontSizeFamily($paragraphFontSize, $fontSecondary);
         color: $darkColor;
     }
 
@@ -495,13 +491,10 @@ a {
     padding: 15px 80px;
     margin-bottom: 40px;
     margin-top: 10px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-family: $fontSecondary;
     letter-spacing: $letterSpacing;
-    font-size: $navFontSize;
     outline: 0;
+    @include fontSizeFamily($navFontSize, $fontSecondary);
 }
 
 .reviewSection {

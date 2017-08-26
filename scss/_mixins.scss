@@ -23,3 +23,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin fontSizeFamily($size, $family) {
+    font-size: $size;
+    font-family: $family;
+}
