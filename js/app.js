@@ -56,7 +56,6 @@ $(document).ready(function() {
 
     // Call methods when scrolling
     $(document).scroll(function() {
-        // Variable declaration to help with browser caching (decrease load times)
         var $scrollPos = $(document).scrollTop();
 
         // var $target = $('.item');
@@ -84,6 +83,7 @@ $(document).ready(function() {
             $('.is-activeNav').addClass('is-activeNavDark');
         }
 
+        // Show/Hide the #toTop Icon
         if ($scrollPos < 250) {
             $toTopIcon.removeClass('toTopShowing');
         } else {
@@ -180,8 +180,6 @@ $(document).ready(function() {
                    }
                  ]
              }
-
-
 
 		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 		//Callout Content
