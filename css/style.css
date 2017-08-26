@@ -158,7 +158,9 @@ a {
       padding: 0 20px;
       line-height: 50px;
       border-radius: 5px;
-      transition: 300ms; }
+      transition: 300ms;
+      /* Has to be set to !important to work with js .preventDefault() */
+      text-decoration: none !important; }
 
 .slideshowToggle {
   width: 50px;

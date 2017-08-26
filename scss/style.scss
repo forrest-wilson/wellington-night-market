@@ -172,6 +172,8 @@ a {
             line-height: 50px;
             border-radius: $borderRadius;
             transition: $transitionSpeed;
+            /* Has to be set to !important to work with js .preventDefault() */
+            text-decoration: none!important;
         }
     }
 }

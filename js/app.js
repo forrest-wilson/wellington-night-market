@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Variable declarations
     var $scrollTime = 600;
     var $navContainer = $('#navContainer');
-    var $htmlBody = $('html body');
+    var $htmlBody = $('html, body');
     var $navLogo = $('.navLogo');
     var $navListItemAnchor = $('.navListItem a');
     var $navListItem = $('.navListItem');
@@ -13,7 +13,7 @@ $(document).ready(function() {
     var $eventOverlay = $('.eventOverlay');
 
     // Scroll to sections when clicked (generic function)
-    $navListItem.click(function() {
+    $navListItem.click(function(e) {
         var $href = $(this).children('a').attr('href');
 
         $(this).each(function() {
@@ -21,6 +21,8 @@ $(document).ready(function() {
                 scrollTop: $($href).offset().top - 75
             }, $scrollTime);
         });
+
+        e.preventDefault();
     });
 
     // Click functionality for the toTopIcon
