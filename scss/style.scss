@@ -104,6 +104,12 @@ a {
     display: grid;
 }
 
+.wrapperLarge {
+    max-width: $mapContentWidth;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
 .wrapper {
     grid-template-columns: repeat(6, 1fr);
 }
@@ -144,9 +150,11 @@ a {
 
 .navLogo {
     float: left;
-    display: block;
     max-width: 45%;
-    max-height: 100%;
+    background-image: url('../img/logo/logo1.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 .navListItems {
@@ -164,7 +172,6 @@ a {
             line-height: 50px;
             border-radius: $borderRadius;
             transition: $transitionSpeed;
-            color: $primaryColor;
         }
     }
 }
@@ -596,12 +603,12 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.navLogo {
-    background-image: url('../img/logo/logo1.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-}
+// .navLogo {
+//     background-image: url('../img/logo/logo1.png');
+//     background-repeat: no-repeat;
+//     height: 100%;
+//     width: 100%;
+// }
 
 .navImageChange {
     background-image: url('../img/logo/logo2.png');
@@ -614,9 +621,3 @@ a {
 /* ======================= */
 /* ======== THEME ======== */
 /* ======================= */
-
-.aboutUsWrapper {
-    max-width: $mapContentWidth;
-    margin: 0 auto;
-    padding: 50px 0;
-}
