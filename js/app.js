@@ -5,6 +5,7 @@ $(document).ready(function() {
     var $htmlBody = $('html body');
     var $navLogo = $('.navLogo');
     var $navListItemAnchor = $('.navListItem a');
+    var $toTopIcon = $('#toTopIcon');
 
     // Scroll to sections when clicked
     $('#whatsOnNavItem').click(function() {
@@ -85,15 +86,19 @@ $(document).ready(function() {
             $navLogo.removeClass('navImageChange');
             $navListItemAnchor.removeClass('blackHover');
             $navListItemAnchor.addClass('whiteHover');
-            $('#toTopIcon').removeClass('toTopShowing');
             $navListItemAnchor.removeClass('is-activeNavDark');
         } else {
             $navContainer.addClass('notAtTop');
             $navLogo.addClass('navImageChange');
             $navListItemAnchor.removeClass('whiteHover');
             $navListItemAnchor.addClass('blackHover');
-            $('#toTopIcon').addClass('toTopShowing');
             $('.is-activeNav').addClass('is-activeNavDark');
+        }
+
+        if ($scrollPos < 250) {
+            $toTopIcon.removeClass('toTopShowing');
+        } else {
+            $toTopIcon.addClass('toTopShowing');
         }
     }).scroll(); // Self executing scroll on page load to initialize elements that rely on the scroll function being triggered
 
