@@ -91,10 +91,11 @@ a {
     }
 }
 
-.whatsOnSection {
-    h1 {
-        background-color: $darkColor;
-    }
+.whatsOnSection,
+.aboutSection,
+.contactSection,
+.footer {
+    background-color: $darkColor;
 }
 
 .wrapper,
@@ -109,10 +110,6 @@ a {
 .verticalWrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-}
-
-.footer {
-    background-color: $darkColor;
 }
 
 #toTopIcon {
@@ -263,11 +260,6 @@ a {
             font-size: 20px;
             letter-spacing: $letterSpacing;
         }
-}
-
-.aboutSection,
-.contactSection {
-    background-color: $darkColor;
 }
 
 .contactWrapper {

@@ -88,7 +88,10 @@ a {
     margin: 0;
     color: #CA433D; }
 
-.whatsOnSection h1 {
+.whatsOnSection,
+.aboutSection,
+.contactSection,
+.footer {
   background-color: #232323; }
 
 .wrapper,
@@ -101,9 +104,6 @@ a {
 .verticalWrapper {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr); }
-
-.footer {
-  background-color: #232323; }
 
 #toTopIcon {
   position: fixed;
@@ -219,10 +219,6 @@ a {
     color: #CA433D;
     font-size: 20px;
     letter-spacing: 0.5px; }
-
-.aboutSection,
-.contactSection {
-  background-color: #232323; }
 
 .contactWrapper {
   margin: 0 auto;
