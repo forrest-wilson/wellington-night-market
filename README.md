@@ -18,9 +18,9 @@ We are currently using the below frameworks/plugins
 Please make sure your changes work in a range of browsers before committing any changes to the repo.
 
 ## Contributors
-* **Forrest Wilson-Jennings**
-* **Florence Lo**
-* **Cameron Shaw**
+* **[Forrest Wilson-Jennings](https://github.com/forrest-wilson)**
+* **[Florence Lo](https://github.com/fpwl)**
+* **[Cameron Shaw](https://github.com/camshaw11)**
 
 ## Copyright
 © 2017 : Yoobee School of Design 17WDWU07
