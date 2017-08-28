@@ -58,7 +58,7 @@ a {
 }
 
 .nav {
-    max-width: $contentWidth;
+    max-width: $mapContentWidth;
     height: 100%;
     margin: 0 auto;
     @include fontSizeFamilyColor($navFontSize, $fontPrimary);
