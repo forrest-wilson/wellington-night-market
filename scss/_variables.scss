@@ -6,9 +6,6 @@ $secondaryColor: white;
 $darkColor: rgb(35, 35, 35);
 $darkColorLightOpaque: rgba(35, 35, 35, 0.1);
 $darkColorDarkOpaque: rgba(35, 35, 35, 0.6);
-/* UNCOMMENT THESE VARIABLES ONCE THEY HAVE VALUES */
-// $fontPrimaryColor: ;
-// $fontSecondaryColor: ;
 
 /* FONTS */
 $fontPrimary: 'Oswald', sans-serif;
@@ -23,7 +20,6 @@ $paragraphFontSize: 16px;
 $letterSpacing:0.5px;
 
 /* BORDER RADIUS */
-
 $borderRadius: 5px;
 
 /* LAYOUT WIDTHS */
@@ -35,7 +31,6 @@ $opaqueHover: 75%;
 $opaque: 30%;
 $navOpaqueBackground: rgba(10, 10, 10, 0.75);
 $opaqueBackground: rgba(10, 10, 10, 0.85);
-
 
 /* TRANSITION SPEEDS */
 $transitionSpeed: 300ms;
