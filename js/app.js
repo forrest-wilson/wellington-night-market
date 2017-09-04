@@ -67,6 +67,23 @@ $(document).ready(function() {
         $mobileNavListItems.toggle();
     });
 
+    // Shows the overlays on each form
+    $('.submit1').click(function() {
+        $('.formOverlay1').show();
+    });
+
+    $('.submit2').click(function() {
+        $('.formOverlay2').show();
+    });
+
+    $('.submit3').click(function() {
+        $('.formOverlay3').show();
+    });
+
+    $('.submit4').click(function() {
+        $('.formOverlay4').show();
+    });
+
     //////////////////////
     //// Hover Events ////
     //////////////////////

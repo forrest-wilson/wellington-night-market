@@ -585,6 +585,31 @@ a:focus {
     padding-bottom: 5px;
 }
 
+.formOverlay {
+    display: none;
+    background-color: $opaqueBackground;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.formSubmitButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0!important;
+}
+
 .form {
     grid-row: 1;
     text-align: center;
@@ -594,6 +619,7 @@ a:focus {
         background-color: $secondaryColor;
         border-radius: $borderRadius;
         padding: 0 10px;
+        position: relative;
     }
 }
 
