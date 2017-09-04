@@ -876,13 +876,6 @@ a:focus {
   .submitButton {
     margin-bottom: 20px; }
 
-  .textarea {
-    max-width: 100%;
-    grid-row: 1; }
-
-  #formFieldset .form2-message {
-    grid-row: 1; }
-
   .formFieldset input[type="email"],
   .formFieldset input[type="text"],
   .formFieldset textarea {
