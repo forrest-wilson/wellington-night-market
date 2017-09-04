@@ -872,13 +872,13 @@ a:focus {
     }
 
     .wrapper {
-    grid-template-columns: none;
+        grid-template-columns: none;
     }
 
     .form {
-    grid-row: 1;
-    text-align: center;
-    padding: 10px 25px;
+        grid-row: 1;
+        text-align: center;
+        padding: 10px 25px;
     }
 
     form {
@@ -911,13 +911,13 @@ a:focus {
     }
 
     .wrapperLarge{
-        margin:auto;
+        margin: auto;
     }
 
     .review {
-    grid-row: 1;
+        grid-row: 1;
         p {
-            margin:auto;
+            margin: auto;
         }
     }
 
@@ -939,9 +939,9 @@ a:focus {
     }
 
     .footerColumn {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
     }
 
    .toTopIcon {
@@ -1089,58 +1089,60 @@ a:focus {
     }
 }
 
-
-
 @media screen and (max-width: 690px) {
     
-       .container {
+    .container {
         width: 100%;
-       }
-       .container h1 {
+    }
+
+    .container h1 {
         font-size: 30px;
         padding-bottom: 0px;
-       }
-       .submitButton {
+    }
+
+    .submitButton {
         margin-bottom: 20px;
-       }
-       .textarea {
-            // Makes sure the message textarea cant be horizontally resized
-            max-width: 100%;
-            grid-row: 1;
-        }
-        #formFieldset .form2-message {
-            grid-row: 1;
-        }
+    }
+
+    .textarea {
+        // Makes sure the message textarea cant be horizontally resized
+        max-width: 100%;
+        grid-row: 1;
+    }
+
+    #formFieldset .form2-message {
+        grid-row: 1;
+    }
     
-        .formFieldset {
+    .formFieldset {
         input[type="email"],
         input[type="text"],
         textarea {
             padding: 5px;
         }
+    }
+
+    .footerColumn1 {
+        grid-column: 1 / 3;
+    }
+
+    .footerColumn2 {
+        grid-column: 1 / 3;
+    p {
+    margin: 0 0 10px;
+    }
+    }
+
+    .footerColumn3 {
+        grid-column: 1 / 3;
+    }
+
+    .footerColumn {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
         }
-    
-        .footerColumn1 {
-            grid-column: 1 / 3;
-        }
-    
-        .footerColumn2 {
-            grid-column: 1 / 3;
-        p {
-        margin: 0 0 10px;
-        }
-        }
-    
-        .footerColumn3 {
-            grid-column: 1 / 3;
-        }
-    
-        .footerColumn {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            }
-        }
+    }
 
 @media screen and (max-width: 690px) {
     .toTopIcon {
