@@ -37,6 +37,36 @@
 				</li>
 			</ul>
 		</nav>
+
+		<nav class="mobileNav">
+			<div id="hamburger" class="hamburger">
+				<span id="hamburgerLine1" class="hamburgerLine"></span>
+				<span id="hamburgerLine2" class="hamburgerLine"></span>
+				<span id="hamburgerLine3" class="hamburgerLine"></span>
+
+				<aside class="hamburgerMenuLabel">MENU</aside>
+			</div>
+
+			<aside class="mobileNavLogo">
+				<img src="img/logo/logo3.png" alt="Logo">
+			</aside>
+
+			<ul class="mobileNavListItems clearfix">
+				<li class="mobileNavListItem">
+					<a href="#whatsOnSection" id="whatsOnNavItem2" class="whiteHover">WHAT'S ON</a>
+				</li>
+				<li class="mobileNavListItem">
+					<a href="#aboutUsSection" id="aboutUsNavItem2" class="whiteHover">ABOUT US</a>
+				</li>
+				<li class="mobileNavListItem">
+					<a href="#reviewsSection" id="reviewsNavItem2" class="whiteHover">REVIEWS</a>
+				</li>
+				<li class="mobileNavListItem">
+					<a href="#contactSection" id="contactNavItem2" class="whiteHover">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+
 	</header>
 
 	<!-- SLIDESHOW CAROUSEL -->
@@ -67,8 +97,38 @@
 		</div>
 	</div>
 
+	<div id="staticHeaderImage">
+		<div class="slideshowBlurb">
+			<h2>THE WELLINGTON</h2>
+			<h1>NIGHT MARKET</h1>
+			<p>EVERY FRIDAY AND SATURDAY FROM 5PM TO 11PM</p>
+		</div>
+	</div>
+
 	<!-- OPEN MAIN -->
 	<main class="main">
+
+		<!-- SOCIAL ICONS -->
+		<div class="mobileSocialIcons">
+			<span class="mobileSocialIcon mobileSocialIcon-facebook">
+				<a href="https://www.facebook.com/WellingtonNightMarket/?ref=br_rs" target="_blank">
+					<img src="img/social/fb-white.svg" alt="Facebook Logo">
+				</a>
+			</span>
+	
+			<span class="mobileSocialIcon mobileSocialIcon-instagram">
+				<a href="https://www.instagram.com/wellingtonnightmarket/?hl=en" target="_blank">
+					<img src="img/social/insta-white.svg" alt="Instagram Logo">
+				</a>
+			</span>
+	
+			<span class="mobileSocialIcon mobileSocialIcon-youtube">
+				<a href="https://www.youtube.com/channel/UCX3GS5E-jYRmo2T_tD4-tWQ" target="_blank">
+					<img src="img/social/yt-white-square.png" alt="YouTube Logo">
+				</a>
+			</span>
+		</div>
+
 		<section id="whatsOnSection" class="section whatsOnSection">
 			<h1>WHAT'S ON</h1>
 			<div class="wrapper">
@@ -81,6 +141,8 @@
 						</div>
 					</div>
 				</article>
+
+				<button class="showMoreEventsButton">Show More</button>
 
 				<article class="event event2">
 					<div class="eventOverlay">
@@ -141,6 +203,9 @@
 					</div>
 					<p><i>"Love the night market! The choice of food is amazing; I had 2x mains but would have had more if my gut could have taken it heheh"<br><br>- Chris Wilkins, Facebook</i></p>
 				</article>
+
+				<button class="showMoreReviewsButton">Show More</button>
+
 				<article class="review review2">
 					<div class="starRatingWrapper">
 						<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
@@ -156,12 +221,80 @@
 			</div>
 		</section>
 
-		<section id="contactSection" class="section contactSection">
+		<!-- CONTACT FORMS IN TABBED MODE ONLY-->
+		<section id="contactSectionTabbed" class="section contactSection">
+			<div class="wrapper contactWrapperTabbed">
+
+
+				<div class="container">
+						   <ul class="nav nav-tabs">
+						    <li class="active"><a data-toggle="tab" href="#Contact">Contact</a></li>
+						    <li><a data-toggle="tab" href="#JoinUs">Join us</a></li>
+						  </ul>
+
+					<div class="tab-content">
+						    <div id="Contact" class="tab-pane fade in active">
+
+								<article class="form form2">
+									<form>
+												<h1>WANT TO BE A PART<br>OF THE MARKET?</h1>
+
+												<fieldset class="formFieldset">
+													<label for="form2-name">Name:</label>
+													<input type="text" name="name" id="form2-name">
+												</fieldset>
+
+												<fieldset class="formFieldset">
+													<label for="form2-email">Email:</label>
+													<input type="text" name="email" id="form2-email">
+												</fieldset>
+
+												<fieldset class="formFieldset">
+													<label for="form2-message">Message:</label>
+													<textarea rows="5" id="form2-message"></textarea>
+												</fieldset>
+
+										<button class="submitButton" type="button">Submit</button>
+									</form>
+								</article>					
+						    </div>
+						<div id="JoinUs" class="tab-pane fade">
+
+						    <article class="form form1">
+								<form>
+										<h1>HAVE ANY QUERIES?<br>GET IN TOUCH!</h1>
+
+										<fieldset class="formFieldset">
+											<label for="form1-name">Name:</label>
+											<input type="text" name="name" id="form1-name">
+										</fieldset>
+
+										<fieldset class="formFieldset">
+											<label for="form1-email">Email:</label>
+											<input type="text" name="email" id="form1-email">
+										</fieldset>
+
+										<fieldset class="formFieldset">
+											<label for="form1-message">Message:</label>
+											<textarea rows="5" id="form1-message"></textarea>
+										</fieldset>
+
+										<button class="submitButton" type="button">Submit</button>
+								</form>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END CONTACT FORMS IN TABBED MODE ONLY-->
+
+		<!-- CONTACT FORMS FOR DESKTOP SCREEN ONLY -->
+		<section id="contactSectionDesktop" class="section contactSection">
 			<div class="wrapper contactWrapper">
 				<article class="form form1">
 					<form>
 						<h1>HAVE ANY QUERIES?<br>GET IN TOUCH!</h1>
-
 						<fieldset class="formFieldset">
 							<label for="form1-name">Name:</label>
 							<input type="text" name="name" id="form1-name">
@@ -183,7 +316,6 @@
 				<article class="form form2">
 					<form>
 						<h1>WANT TO BE A PART<br>OF THE MARKET?</h1>
-
 						<fieldset class="formFieldset">
 							<label for="form2-name">Name:</label>
 							<input type="text" name="name" id="form2-name">
@@ -204,6 +336,8 @@
 				</article>
 			</div>
 		</section>
+ 		<!-- END CONTACT FORMS FOR DESKTOP -->
+		
 	</main>
 	<!-- CLOSE MAIN -->
 

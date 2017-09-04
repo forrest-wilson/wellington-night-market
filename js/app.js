@@ -25,12 +25,39 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.mobileNavListItem').click(function(e) {
+        var $href = $(this).children('a').attr('href');
+
+        $(this).each(function() {
+            $htmlBody.animate({
+                scrollTop: $($href).offset().top - 75
+            }, $scrollTime);
+        });
+
+        e.preventDefault();
+    });
+
+    $('.mobileNavListItem').click(function() {
+        $('.mobileNavListItems').toggle();
+    });
+
     // Click functionality for the toTopIcon
     $toTopIcon.click(function() {
         $htmlBody.animate({
             scrollTop: $htmlBody.offset().top
         }, $scrollTime);
     });
+
+    $('.showMoreEventsButton').click(function() {
+        $(this).hide();
+        $('.event2, .event3').show();
+    });
+
+    $(".showMoreReviewsButton").click(function(){
+        $(".review2").show();
+        $(".review3").show();
+        $(".showMoreReviewsButton").hide();
+    })
 
     // Event hover function
     $eventOverlay.hover(function() {
@@ -39,23 +66,33 @@ $(document).ready(function() {
         $(this).removeClass('eventOverlayShowing');
     });
 
-    // When clicking on a nav item, the background sticks with it
-    $whiteHover.click(function() {
-        $navListItemAnchor.each(function() {
-            $(this).removeClass('is-activeNav');
-            $(this).removeClass('is-activeNavDark');
-        });
-
-        $(this).addClass('is-activeNav');
+    $('.mobileNavLogo img').click(function() {
+        $htmlBody.animate({
+            scrollTop: $htmlBody.offset().top
+        }, $scrollTime);
     });
 
-    $blackHover.click(function() {
-        $navListItemAnchor.each(function() {
-            $(this).removeClass('is-activeNav');
-            $(this).removeClass('is-activeNavDark');
-        });
+    // When clicking on a nav item, the background sticks with it
+    // $whiteHover.click(function() {
+    //     $navListItemAnchor.each(function() {
+    //         $(this).removeClass('is-activeNav');
+    //         $(this).removeClass('is-activeNavDark');
+    //     });
+    //
+    //     $(this).addClass('is-activeNav');
+    // });
+    //
+    // $blackHover.click(function() {
+    //     $navListItemAnchor.each(function() {
+    //         $(this).removeClass('is-activeNav');
+    //         $(this).removeClass('is-activeNavDark');
+    //     });
+    //
+    //     $(this).addClass('is-activeNavDark');
+    // });
 
-        $(this).addClass('is-activeNavDark');
+    $('#hamburger').click(function() {
+        $('.mobileNavListItems').toggle();
     });
 
     // Call methods when scrolling
@@ -73,22 +110,22 @@ $(document).ready(function() {
         // Adds and removes the notAtTop class depending on scroll position
         // Change the number value in the if() statement to change the point
         // at which the function runs
-        if ($scrollPos < 575) {
-            $navContainer.removeClass('notAtTop');
-            $navLogo.removeClass('navImageChange');
-            $navListItemAnchor.removeClass('blackHover');
-            $navListItemAnchor.addClass('whiteHover');
-            $navListItemAnchor.removeClass('is-activeNavDark');
-        } else {
-            $navContainer.addClass('notAtTop');
-            $navLogo.addClass('navImageChange');
-            $navListItemAnchor.removeClass('whiteHover');
-            $navListItemAnchor.addClass('blackHover');
-            // DON'T replace this line
-            // Unexpected behavior happens when trying to
-            // replace the class call with a stored variable
-            $('.is-activeNav').addClass('is-activeNavDark');
-        }
+        // if ($scrollPos < 575) {
+        //     $navContainer.removeClass('notAtTop');
+        //     $navLogo.removeClass('navImageChange');
+        //     $navListItemAnchor.removeClass('blackHover');
+        //     $navListItemAnchor.addClass('whiteHover');
+        //     $navListItemAnchor.removeClass('is-activeNavDark');
+        // } else {
+        //     $navContainer.addClass('notAtTop');
+        //     $navLogo.addClass('navImageChange');
+        //     $navListItemAnchor.removeClass('whiteHover');
+        //     $navListItemAnchor.addClass('blackHover');
+        //     // DON'T replace this line
+        //     // Unexpected behavior happens when trying to
+        //     // replace the class call with a stored variable
+        //     $('.is-activeNav').addClass('is-activeNavDark');
+        // }
 
         // Show/Hide the #toTop Icon
         if ($scrollPos < 250) {
