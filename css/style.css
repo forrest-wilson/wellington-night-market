@@ -688,10 +688,11 @@ a:focus {
     grid-row: 1;
     text-align: center;
     padding: 10px 25px; }
-    .form form {
-      background-color: white;
-      border-radius: 5px;
-      padding: 0 10px; } }
+
+  form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px; } }
 @media screen and (min-width: 690px) {
   #myCarousel {
     display: block; }
@@ -728,6 +729,14 @@ a:focus {
     display: none; }
 
   .showMoreReviewsButton {
+    display: none; }
+
+  .footerColumn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px; }
+
+  .toTopIcon {
     display: none; } }
 @media screen and (min-width: 924px) {
   .nav,
@@ -827,7 +836,15 @@ a:focus {
     display: none; }
 
   .seperator {
-    display: none; } }
+    display: none; }
+
+  .footerColumn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px; }
+
+  .toTopIcon {
+    display: block; } }
 @media screen and (max-width: 690px) {
   .container {
     width: 100%; }

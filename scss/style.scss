@@ -861,14 +861,15 @@ a:focus {
     grid-row: 1;
     text-align: center;
     padding: 10px 25px;
+    }
 
     form {
         background-color: $secondaryColor;
         border-radius: $borderRadius;
         padding: 0 10px;
-    }
     }   
 }
+
 
 @media screen and (min-width: 690px) {
     #myCarousel {
@@ -918,7 +919,19 @@ a:focus {
     .showMoreReviewsButton {
         display: none;
     }
+
+    .footerColumn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    }
+
+   .toTopIcon {
+        display: none;
+    }
 }
+
+
 
 @media screen and (min-width: 924px) {
 
@@ -1047,6 +1060,14 @@ a:focus {
 
     .seperator{
         display: none;
+    }
+    .footerColumn {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+   .toTopIcon {
+        display: block;
     }
 }
 
