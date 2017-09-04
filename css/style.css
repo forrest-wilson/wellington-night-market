@@ -156,6 +156,14 @@ a:focus {
 .footer {
   background-color: #232323; }
 
+.whatsOnSection {
+  padding-bottom: 30px; }
+
+.seperator {
+  max-width: 100%;
+  height: 50px;
+  background-color: white; }
+
 .aboutSection .wrapper {
   padding-bottom: 0; }
 
@@ -166,7 +174,7 @@ a:focus {
 .wrapperLarge {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0; }
+  padding: 0; }
 
 .wrapper {
   grid-template-columns: repeat(6, 1fr); }
@@ -464,8 +472,10 @@ a:focus {
     padding-bottom: 20px;
     color: white; }
   .blurbWrapper .locationTime {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
     color: #CA433D;
-    border: solid 2px #CA433D;
     padding: 5px 20px;
     text-align: center;
     margin: 0 auto;
@@ -570,7 +580,10 @@ a:focus {
   border-radius: 4px 4px 4px 4px; }
 
 .reviewSection div {
-  padding: 0px; }
+  padding: 0px;
+  padding-bottom: 15px; }
+.reviewSection h1 {
+  padding-top: 45px; }
 
 .starRatingWrapper {
   font-size: 40px;
@@ -598,8 +611,8 @@ a:focus {
 
 .mobileSocialIcons {
   display: grid;
-  height: 110px;
-  background-color: #232323;
+  height: 80px;
+  background-color: #CA433D;
   grid-template-columns: repeat(5, 1fr); }
   .mobileSocialIcons .mobileSocialIcon-facebook {
     grid-column: 2/3; }
@@ -614,7 +627,8 @@ a:focus {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      padding: 30px; }
+      margin: 0 auto;
+      padding-top: 15px; }
       .mobileSocialIcons .mobileSocialIcon a img {
         height: 50px; }
 
@@ -697,10 +711,11 @@ a:focus {
     grid-row: 1;
     text-align: center;
     padding: 10px 25px; }
-    .form form {
-      background-color: white;
-      border-radius: 5px;
-      padding: 0 10px; } }
+
+  form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px; } }
 @media screen and (min-width: 690px) {
   #myCarousel {
     display: block; }
@@ -717,9 +732,6 @@ a:focus {
     top: 0;
     left: 100%;
     height: 100%; }
-
-  .aboutSection .wrapper {
-    padding-bottom: 50px; }
 
   .wrapperLarge {
     margin: auto; }
@@ -740,6 +752,14 @@ a:focus {
     display: none; }
 
   .showMoreReviewsButton {
+    display: none; }
+
+  .footerColumn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px; }
+
+  .toTopIcon {
     display: none; } }
 @media screen and (min-width: 924px) {
   .nav,
@@ -789,8 +809,14 @@ a:focus {
   .showMoreEventsButton {
     display: none; }
 
+  .whatsOnSection {
+    padding-bottom: 0; }
+
   .wrapperLarge {
     padding: 50px 0; }
+
+  .aboutSection .wrapper {
+    padding-bottom: 50px; }
 
   #mapContainer {
     height: 500px;
@@ -830,7 +856,18 @@ a:focus {
     display: block; }
 
   .contactWrapperTabbed {
-    display: none; } }
+    display: none; }
+
+  .seperator {
+    display: none; }
+
+  .footerColumn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px; }
+
+  .toTopIcon {
+    display: block; } }
 @media screen and (max-width: 690px) {
   .container {
     width: 100%; }
@@ -860,7 +897,7 @@ a:focus {
   .footerColumn2 {
     grid-column: 1 / 3; }
     .footerColumn2 p {
-      margin: 0 0 1px; }
+      margin: 0 0 10px; }
 
   .footerColumn3 {
     grid-column: 1 / 3; }
