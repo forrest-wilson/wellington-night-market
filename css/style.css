@@ -472,14 +472,14 @@ a:focus {
     padding-bottom: 20px;
     color: white; }
   .blurbWrapper .locationTime {
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
     text-transform: uppercase;
-    color: #CA433D;
     padding: 5px 20px;
     text-align: center;
     margin: 0 auto;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    color: #CA433D; }
   .blurbWrapper .innerTop {
     top: 0; }
   .blurbWrapper .innerBottom {
