@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    min-width: 0px;
+    min-width: 200px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -736,7 +736,7 @@ a:focus {
 
 .socialIcons {
     grid-column: 1;
-    background-color: $primaryColor;
+    background-color: $darkColor;
     position: fixed;
     bottom: 25px;
     left: 0;
