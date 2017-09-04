@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    // Variable declarations
+
+    ///////////////////////////////
+    //// Variable Declarations ////
+    ///////////////////////////////
+
     var $scrollTime = 600;
     var $navContainer = $('#navContainer');
     var $htmlBody = $('html, body');
@@ -15,10 +19,14 @@ $(document).ready(function() {
     var $mobileNavListItems = $('.mobileNavListItems');
     var $hamburger = $('#hamburger');
     var $showMoreEventsButton = $('.showMoreEventsButton');
-    var $showMoreReviewsButton = $('.showMoreReviewsButton')
+    var $showMoreReviewsButton = $('.showMoreReviewsButton');
+    
+    //////////////////////
+    //// Click Events ////
+    //////////////////////
 
-    // Scroll to sections when clicked (generic function)
-    $navListItem.click(function(e) {
+    // // Click event for the Navigation items (mobile and desktop)
+    $('.navListItem, .mobileNavListItem').click(function(e) {
         var $href = $(this).children('a').attr('href');
 
         $(this).each(function() {
@@ -30,57 +38,49 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $mobileNavListItem.click(function(e) {
-        var $href = $(this).children('a').attr('href');
-
-        $(this).each(function() {
-            $htmlBody.animate({
-                scrollTop: $($href).offset().top - 75
-            }, $scrollTime);
-        });
-
-        e.preventDefault();
-    });
-
+    // Click event that hides the mobile nav menu
     $mobileNavListItem.click(function() {
         $mobileNavListItems.toggle();
     });
 
-    // Click functionality for the toTopIcon
-    $toTopIcon.click(function() {
-        $htmlBody.animate({
-            scrollTop: $htmlBody.offset().top
-        }, $scrollTime);
-    });
-
+    // Click event that shows all events and hides the button
     $showMoreEventsButton.click(function() {
-        $(this).hide();
         $('.event2, .event3').show();
+        $(this).hide();
     });
 
+    // Click event that shows all reviews and hides the button
     $showMoreReviewsButton.click(function(){
         $('.review2, .review3').show();
         $(this).hide();
     });
 
-    // Event hover function
-    $eventOverlay.hover(function() {
-        $(this).addClass('eventOverlayShowing');
-    }, function() {
-        $(this).removeClass('eventOverlayShowing');
-    });
-
-    $('.mobileNavLogo img').click(function() {
+    // Click event that scrolls the document to the top of the page
+    $('.mobileNavLogo img, #toTopIcon').click(function() {
         $htmlBody.animate({
             scrollTop: $htmlBody.offset().top
         }, $scrollTime);
     });
-
+    
+    // Shows/hides the hamburger menu
     $hamburger.click(function() {
         $mobileNavListItems.toggle();
     });
 
-    // Call methods when scrolling
+    //////////////////////
+    //// Hover Events ////
+    //////////////////////
+
+    // Hover event that shows overlay when hovering over events
+    $eventOverlay.hover(function() {
+        $(this).toggleClass('eventOverlayShowing');
+    });
+
+    ///////////////////////
+    //// Scroll Events ////
+    ///////////////////////
+
+    // Calls this function when the document is scrolling. Mainly used for the showing/hiding of the #toTopButton
     $(document).scroll(function() {
         var $scrollPos = $(document).scrollTop();
 
@@ -92,7 +92,10 @@ $(document).ready(function() {
         }
     }).scroll(); // Self executing scroll on page load to initialize elements that rely on the scroll function being triggered
 
-	// Google Maps JS
+	/////////////////////////
+    //// Google Maps API ////
+    /////////////////////////
+
 	function initialize() {
         var myLatlng = new google.maps.LatLng(-41.2926356,174.7760156,19.82);
 		var mapOptions = {
