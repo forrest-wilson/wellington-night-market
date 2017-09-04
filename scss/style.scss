@@ -169,6 +169,16 @@ a:focus {
 .footer {
     background-color: $darkColor;
 }
+.whatsOnSection{
+    padding-bottom:30px;
+}
+
+//seperator
+.seperator{
+    max-width:100%;
+    height:50px;
+    background-color:$seperatorColor;
+}
 
 .aboutSection {
     .wrapper {
@@ -184,7 +194,7 @@ a:focus {
 .wrapperLarge {
     max-width: $mapContentWidth;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -556,8 +566,10 @@ a:focus {
     }
 
     .locationTime {
+        font-family:$fontPrimary;
+        font-size: 30px;
+        text-transform: uppercase;
         color: $primaryColor;
-        border: solid 2px $primaryColor;
         padding: 5px 20px;
         text-align: center;
         margin: 0 auto;
@@ -666,6 +678,10 @@ a:focus {
 .reviewSection {
     div {
         padding:0px;
+        padding-bottom:15px;
+    }
+    h1{
+        padding-top:45px;
     }
 }
 
@@ -702,8 +718,8 @@ a:focus {
 
 .mobileSocialIcons {
     display: grid;
-    height: 110px;
-    background-color: $darkColor;
+    height: 80px;
+    background-color: $primaryColor;
     grid-template-columns: repeat(5, 1fr);
 
     .mobileSocialIcon-facebook {
@@ -725,7 +741,8 @@ a:focus {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            padding: 30px;
+            margin: 0 auto;
+            padding-top:15px;
 
             img {
                 height: 50px;
@@ -873,12 +890,6 @@ a:focus {
         height: 100%;
     }
 
-    .aboutSection {
-        .wrapper {
-            padding-bottom: 50px;
-        }
-    }
-
     .wrapperLarge{
         margin:auto;
     }
@@ -909,6 +920,7 @@ a:focus {
 }
 
 @media screen and (min-width: 924px) {
+
     .nav,
     .navLogo {
         display: block;
@@ -969,9 +981,17 @@ a:focus {
     .showMoreEventsButton {
         display: none;
     }
+    .whatsOnSection{
+        padding-bottom:0;
+    }
 
     .wrapperLarge {
         padding: 50px 0;
+    }
+    .aboutSection {
+        .wrapper {
+            padding-bottom: 50px;
+        }
     }
 
     #mapContainer {
@@ -1023,7 +1043,13 @@ a:focus {
     .contactWrapperTabbed {
         display: none;
     }
+
+    .seperator{
+        display: none;
+    }
 }
+
+
 
 @media screen and (max-width: 690px) {
     
