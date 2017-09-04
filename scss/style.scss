@@ -55,7 +55,7 @@ a:focus {
 
 .navContainer {
     position: fixed;
-    background-color: $navOpaqueBackground;
+    background-color: $darkColor;
     display: block;
     height: 75px;
     z-index: 200;
@@ -147,7 +147,7 @@ a:focus {
 .main,
 .footer {
     position: relative;
-    top: 275px;
+    top: 400px;
     z-index: 150;
 }
 
@@ -275,7 +275,7 @@ a:focus {
     @include noPaddingOrMargin;
     position: relative;
     top: 75px;
-    background-color: $navOpaqueBackground;
+    background-color: $darkColor;
     display: none;
 
     .mobileNavListItem {
@@ -912,6 +912,10 @@ a:focus {
     .nav,
     .navLogo {
         display: block;
+    }
+
+    .navContainer {
+        background-color: $navOpaqueBackground;
     }
 
     .mobileNav {
