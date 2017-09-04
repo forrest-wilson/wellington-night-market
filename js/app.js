@@ -12,7 +12,10 @@ $(document).ready(function() {
     var $blackHover = $('.blackHover');
     var $eventOverlay = $('.eventOverlay');
     var $mobileNavListItem = $('.mobileNavListItem');
+    var $mobileNavListItems = $('.mobileNavListItems');
     var $hamburger = $('#hamburger');
+    var $showMoreEventsButton = $('.showMoreEventsButton');
+    var $showMoreReviewsButton = $('.showMoreReviewsButton')
 
     // Scroll to sections when clicked (generic function)
     $navListItem.click(function(e) {
@@ -40,7 +43,7 @@ $(document).ready(function() {
     });
 
     $mobileNavListItem.click(function() {
-        $('.mobileNavListItems').toggle();
+        $mobileNavListItems.toggle();
     });
 
     // Click functionality for the toTopIcon
@@ -50,16 +53,15 @@ $(document).ready(function() {
         }, $scrollTime);
     });
 
-    $('.showMoreEventsButton').click(function() {
+    $showMoreEventsButton.click(function() {
         $(this).hide();
         $('.event2, .event3').show();
     });
 
-    $(".showMoreReviewsButton").click(function(){
-        $(".review2").show();
-        $(".review3").show();
-        $(".showMoreReviewsButton").hide();
-    })
+    $showMoreReviewsButton.click(function(){
+        $('.review2, .review3').show();
+        $(this).hide();
+    });
 
     // Event hover function
     $eventOverlay.hover(function() {
@@ -75,7 +77,7 @@ $(document).ready(function() {
     });
 
     $hamburger.click(function() {
-        $('.mobileNavListItems').toggle();
+        $mobileNavListItems.toggle();
     });
 
     // Call methods when scrolling
