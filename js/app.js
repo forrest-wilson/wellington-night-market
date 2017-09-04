@@ -56,7 +56,7 @@ $(document).ready(function() {
     });
 
     // Click event that scrolls the document to the top of the page
-    $('.mobileNavLogo img, #toTopIcon').click(function() {
+    $('.mobileNavLogo img, #toTopIcon, .navLogo').click(function() {
         $htmlBody.animate({
             scrollTop: $htmlBody.offset().top
         }, $scrollTime);
