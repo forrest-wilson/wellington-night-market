@@ -620,6 +620,8 @@ a:focus {
     grid-column: 3/4; }
   .mobileSocialIcons .mobileSocialIcon-youtube {
     grid-column: 4/5; }
+    .mobileSocialIcons .mobileSocialIcon-youtube img {
+      border-radius: 5px; }
   .mobileSocialIcons .mobileSocialIcon {
     height: 100%; }
     .mobileSocialIcons .mobileSocialIcon a {

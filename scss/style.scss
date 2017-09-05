@@ -760,6 +760,9 @@ a:focus {
 
     .mobileSocialIcon-youtube {
         grid-column: 4/5;
+        img {
+            border-radius: $borderRadius;
+        }
     }
 
     .mobileSocialIcon {
