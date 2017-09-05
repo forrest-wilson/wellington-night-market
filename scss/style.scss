@@ -539,7 +539,9 @@ a:focus {
     p {
         @include noPaddingOrMargin;
     }
-    .reviewName{
+
+    .reviewName,
+    .reviewName1 {
         margin-top:20px;
     }
 }
@@ -948,6 +950,10 @@ a:focus {
         }
     }
 
+    .reviewStatement {
+        display: block!important;
+    }
+
     .review1 {
         grid-column: 1/ 4; 
     }
@@ -958,7 +964,7 @@ a:focus {
     }
 
     .review3 {
-        display: none;
+        display: none!important;
     }
 
     .showMoreReviewsButton {
@@ -1096,7 +1102,7 @@ a:focus {
 
     .review3 {
         grid-column: 5 / 7;
-        display: block;
+        display: block!important;
     }
 
     .contactWrapperTabbed {
