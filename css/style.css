@@ -441,6 +441,8 @@ a:focus {
   .review p {
     padding: 0;
     margin: 0; }
+  .review .reviewName {
+    margin-top: 20px; }
 
 .review1 {
   grid-row: 1 / 2; }

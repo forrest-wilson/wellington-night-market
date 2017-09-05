@@ -525,6 +525,9 @@ a:focus {
     p {
         @include noPaddingOrMargin;
     }
+    .reviewName{
+        margin-top:20px;
+    }
 }
 
 .review1 {

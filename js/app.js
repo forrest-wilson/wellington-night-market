@@ -52,8 +52,14 @@ $(document).ready(function() {
     // Click event that shows all reviews and hides the button
     $showMoreReviewsButton.click(function(){
         $('.review2, .review3').show();
+        $('.reviewStatement').hide();
         $(this).hide();
     });
+
+    //When show more in reviews is clicked the review condense
+
+        
+   
 
     // Click event that scrolls the document to the top of the page
     $('.mobileNavLogo img, #toTopIcon, .navLogo').click(function() {
