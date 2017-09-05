@@ -65,6 +65,9 @@ $(document).ready(function() {
     // Shows/hides the hamburger menu
     $hamburger.click(function() {
         $mobileNavListItems.toggle();
+        $('#hamburgerLine1').toggleClass('hamClosed1');
+        $('#hamburgerLine2').toggleClass('hamClosed2');
+        $('#hamburgerLine3').toggleClass('hamClosed3');
     });
 
     // Shows the overlays on each form
