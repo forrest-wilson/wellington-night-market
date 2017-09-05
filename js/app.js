@@ -17,7 +17,6 @@ $(document).ready(function() {
     var $eventOverlay = $('.eventOverlay');
     var $mobileNavListItem = $('.mobileNavListItem');
     var $mobileNavListItems = $('.mobileNavListItems');
-    var $hamburger = $('#hamburger');
     var $showMoreEventsButton = $('.showMoreEventsButton');
     var $showMoreReviewsButton = $('.showMoreReviewsButton');
     
@@ -39,8 +38,11 @@ $(document).ready(function() {
     });
 
     // Click event that hides the mobile nav menu
-    $mobileNavListItem.click(function() {
+    $('.mobileNavListItem, #hamburger').click(function() {
         $mobileNavListItems.toggle();
+        $('#hamburgerLine1').toggleClass('hamClosed1');
+        $('#hamburgerLine2').toggleClass('hamClosed2');
+        $('#hamburgerLine3').toggleClass('hamClosed3');
     });
 
     // Click event that shows all events and hides the button
@@ -60,14 +62,6 @@ $(document).ready(function() {
         $htmlBody.animate({
             scrollTop: $htmlBody.offset().top
         }, $scrollTime);
-    });
-    
-    // Shows/hides the hamburger menu
-    $hamburger.click(function() {
-        $mobileNavListItems.toggle();
-        $('#hamburgerLine1').toggleClass('hamClosed1');
-        $('#hamburgerLine2').toggleClass('hamClosed2');
-        $('#hamburgerLine3').toggleClass('hamClosed3');
     });
 
     // Shows the overlays on each form
@@ -221,7 +215,6 @@ $(document).ready(function() {
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString,
 			maxWidth: 500,
-
 		});
 
 		//Add Marker
@@ -243,5 +236,4 @@ $(document).ready(function() {
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
-
 });
