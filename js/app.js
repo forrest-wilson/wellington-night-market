@@ -45,12 +45,8 @@ $(document).ready(function() {
         $('.review2, .review3').show();
         $('.reviewStatement').hide();
         $(this).hide();
+        $('.reviewName').css('margin-top', '0px');
     });
-
-    //When show more in reviews is clicked the review condense
-
-        
-   
 
     // Click event that scrolls the document to the top of the page
     $('.mobileNavLogo img, #toTopIcon, .navLogo').click(function() {
