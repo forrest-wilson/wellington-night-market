@@ -34,7 +34,7 @@ p {
 
 a,
 a:focus {
-  color: #CA433D; }
+  color: #ca433d; }
 
 .clearfix:after {
   content: "";
@@ -146,7 +146,7 @@ a:focus {
     text-align: center;
     padding: 20px 0;
     margin: 0;
-    color: #CA433D; }
+    color: #ca433d; }
 
 /* Change all dark section background colors here */
 .whatsOnSection,
@@ -187,7 +187,7 @@ a:focus {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: #CA433D;
+  background-color: #ca433d;
   width: 50px;
   height: 50px;
   z-index: 1000;
@@ -276,7 +276,7 @@ a:focus {
       text-align: center;
       font-size: 20px;
       font-family: "Oswald", sans-serif;
-      color: #CA433D;
+      color: #ca433d;
       transition: 300ms; }
 
 .slideshowToggle {
@@ -294,7 +294,7 @@ a:focus {
   right: 0 !important; }
 
 .carousel-indicators .active {
-  background-color: #CA433D; }
+  background-color: #ca433d; }
 
 .carousel-inner {
   height: 100%; }
@@ -342,7 +342,7 @@ a:focus {
     letter-spacing: 2px;
     margin-bottom: 0px; }
   .slideshowBlurb p {
-    color: #CA433D;
+    color: #ca433d;
     font-size: 20px;
     letter-spacing: 0.5px; }
 
@@ -381,7 +381,7 @@ a:focus {
 .showMoreReviewsButton {
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #CA433D;
+  background-color: #ca433d;
   border: 0;
   border-radius: 5px;
   width: 150px;
@@ -415,7 +415,7 @@ a:focus {
     font-family: "Oswald", sans-serif;
     margin-bottom: 10px; }
   .eventOverlay h3 {
-    color: #CA433D;
+    color: #ca433d;
     text-align: center; }
   .eventOverlay h2,
   .eventOverlay p {
@@ -490,7 +490,7 @@ a:focus {
     display: inline-block;
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    color: #CA433D; }
+    color: #ca433d; }
   .blurbWrapper .innerTop {
     top: 0; }
   .blurbWrapper .innerBottom {
@@ -564,11 +564,11 @@ a:focus {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
-    border: 2px solid #CA433D;
+    border: 2px solid #ca433d;
     outline: 0; }
 
 .submitButton {
-  background-color: #CA433D;
+  background-color: #ca433d;
   border: none;
   border-radius: 5px;
   padding: 15px 80px;
@@ -623,7 +623,7 @@ a:focus {
 .mobileSocialIcons {
   display: grid;
   height: 80px;
-  background-color: #CA433D;
+  background-color: #ca433d;
   grid-template-columns: repeat(5, 1fr); }
   .mobileSocialIcons .mobileSocialIcon-facebook {
     grid-column: 2/3; }
@@ -715,7 +715,8 @@ a:focus {
     width: 100%; }
 
   .wrapper {
-    grid-template-columns: none; }
+    grid-template-columns: none;
+    padding-bottom: 30px; }
 
   .form {
     grid-row: 1;
@@ -912,5 +913,3 @@ a:focus {
 
   .toTopIcon {
     display: none; } }
-
-/*# sourceMappingURL=style.css.map */
