@@ -43,7 +43,9 @@ $(document).ready(function() {
     // Click event that shows all reviews and hides the button
     $('.showMoreReviewsButton').click(function(){
         $('.review2, .review3').show();
+        $('.reviewStatement').hide();
         $(this).hide();
+        $('.reviewName').css('margin-top', '0px');
     });
 
     // Click event that scrolls the document to the top of the page

@@ -452,6 +452,9 @@ a:focus {
   .review p {
     padding: 0;
     margin: 0; }
+  .review .reviewName,
+  .review .reviewName1 {
+    margin-top: 20px; }
 
 .review1 {
   grid-row: 1 / 2; }
@@ -757,6 +760,9 @@ a:focus {
     .review p {
       margin: auto; }
 
+  .reviewStatement {
+    display: block !important; }
+
   .review1 {
     grid-column: 1/ 4; }
 
@@ -765,7 +771,7 @@ a:focus {
     display: block; }
 
   .review3 {
-    display: none; }
+    display: none !important; }
 
   .showMoreReviewsButton {
     display: none; }
@@ -869,7 +875,7 @@ a:focus {
 
   .review3 {
     grid-column: 5 / 7;
-    display: block; }
+    display: block !important; }
 
   .contactWrapperTabbed {
     display: none; }
