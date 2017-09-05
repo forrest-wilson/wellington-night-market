@@ -10,7 +10,7 @@ The only third party piece of software used is Koala as a SASS to CSS converter.
 ## Frameworks Used
 We are currently using the below frameworks/plugins
 
-* [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/) - Front End Framework (v3.3.7)
+* [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/) - Front End Framework (v3.3.7) (Only used for the Desktop Carousel)
 * [Normalize.css](https://necolas.github.io/normalize.css/7.0.0/normalize.css) - CSS Reset Framework (v7.0.0)
 * [jQuery](https://jquery.com) - JS Framework (v3.2.1)
 

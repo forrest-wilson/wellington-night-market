@@ -231,6 +231,17 @@ a:focus {
     display: block;
     cursor: pointer; }
 
+.hamClosed1 {
+  transform: rotate(45deg);
+  top: 24px !important; }
+
+.hamClosed2 {
+  display: none; }
+
+.hamClosed3 {
+  transform: rotate(-45deg);
+  bottom: 23.5px !important; }
+
 .navListItems {
   float: right;
   padding: 0;
@@ -585,7 +596,9 @@ a:focus {
   padding: 0px;
   padding-bottom: 15px; }
 .reviewSection h1 {
-  padding-top: 45px; }
+  padding-top: 45px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .starRatingWrapper {
   font-size: 40px;
@@ -706,7 +719,8 @@ a:focus {
     width: 100%; }
 
   .wrapper {
-    grid-template-columns: none; }
+    grid-template-columns: none;
+    padding-bottom: 30px; }
 
   .form {
     grid-row: 1;

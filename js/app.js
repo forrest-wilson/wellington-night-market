@@ -5,21 +5,9 @@ $(document).ready(function() {
     ///////////////////////////////
 
     var $scrollTime = 600;
-    var $navContainer = $('#navContainer');
     var $htmlBody = $('html, body');
-    var $navLogo = $('.navLogo');
-    var $navListItemAnchor = $('.navListItem a');
-    var $navListItem = $('.navListItem');
-    var $isActiveNav = $('.is-activeNav');
     var $toTopIcon = $('#toTopIcon');
-    var $whiteHover = $('.whiteHover');
-    var $blackHover = $('.blackHover');
     var $eventOverlay = $('.eventOverlay');
-    var $mobileNavListItem = $('.mobileNavListItem');
-    var $mobileNavListItems = $('.mobileNavListItems');
-    var $hamburger = $('#hamburger');
-    var $showMoreEventsButton = $('.showMoreEventsButton');
-    var $showMoreReviewsButton = $('.showMoreReviewsButton');
     
     //////////////////////
     //// Click Events ////
@@ -39,18 +27,21 @@ $(document).ready(function() {
     });
 
     // Click event that hides the mobile nav menu
-    $mobileNavListItem.click(function() {
-        $mobileNavListItems.toggle();
+    $('.mobileNavListItem, #hamburger').click(function() {
+        $('.mobileNavListItems').toggle();
+        $('#hamburgerLine1').toggleClass('hamClosed1');
+        $('#hamburgerLine2').toggleClass('hamClosed2');
+        $('#hamburgerLine3').toggleClass('hamClosed3');
     });
 
     // Click event that shows all events and hides the button
-    $showMoreEventsButton.click(function() {
+    $('.showMoreEventsButton').click(function() {
         $('.event2, .event3').show();
         $(this).hide();
     });
 
     // Click event that shows all reviews and hides the button
-    $showMoreReviewsButton.click(function(){
+    $('.showMoreReviewsButton').click(function(){
         $('.review2, .review3').show();
         $('.reviewStatement').hide();
         $(this).hide();
@@ -66,11 +57,6 @@ $(document).ready(function() {
         $htmlBody.animate({
             scrollTop: $htmlBody.offset().top
         }, $scrollTime);
-    });
-    
-    // Shows/hides the hamburger menu
-    $hamburger.click(function() {
-        $mobileNavListItems.toggle();
     });
 
     // Shows the overlays on each form
@@ -224,7 +210,6 @@ $(document).ready(function() {
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString,
 			maxWidth: 500,
-
 		});
 
 		//Add Marker
@@ -246,5 +231,4 @@ $(document).ready(function() {
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
-
 });

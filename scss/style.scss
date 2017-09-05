@@ -262,6 +262,20 @@ a:focus {
     }
 }
 
+.hamClosed1 {
+    transform: rotate(45deg);
+    top: 24px!important;
+}
+
+.hamClosed2 {
+    display: none;
+}
+
+.hamClosed3 {
+    transform: rotate(-45deg);
+    bottom: 23.5px!important;
+}
+
 .navListItems {
     float: right;
     @include noPaddingOrMargin;
@@ -707,12 +721,14 @@ a:focus {
 
 .reviewSection {
     div {
-        padding:0px;
-        padding-bottom:15px;
+        padding: 0px;
+        padding-bottom: 15px;
     }
 
     h1 {
-        padding-top:45px;
+        padding-top: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -883,6 +899,7 @@ a:focus {
 
     .wrapper {
         grid-template-columns: none;
+        padding-bottom: 30px;
     }
 
     .form {
