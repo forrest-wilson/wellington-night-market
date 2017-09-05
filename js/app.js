@@ -72,6 +72,10 @@ $(document).ready(function() {
         $('.formOverlay4').show();
     });
 
+    $('.formSubmitButton').click(function() {
+        $('.formOverlay').hide();
+    });
+
     //////////////////////
     //// Hover Events ////
     //////////////////////
