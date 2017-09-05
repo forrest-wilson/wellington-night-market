@@ -231,6 +231,17 @@ a:focus {
     display: block;
     cursor: pointer; }
 
+.hamClosed1 {
+  transform: rotate(45deg);
+  top: 24px !important; }
+
+.hamClosed2 {
+  display: none; }
+
+.hamClosed3 {
+  transform: rotate(-45deg);
+  bottom: 23.5px !important; }
+
 .navListItems {
   float: right;
   padding: 0;
