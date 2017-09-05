@@ -897,8 +897,8 @@ a:focus {
   .footerColumn {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px; } }
-@media screen and (max-width: 690px) {
+    padding-top: 20px; }
+
   .toTopIcon {
     display: none; } }
 
